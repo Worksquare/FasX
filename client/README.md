@@ -1,0 +1,1 @@
+# Fastx Application Frontend Server
