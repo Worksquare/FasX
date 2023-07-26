@@ -5,12 +5,12 @@ import Success from "../../images/success.png";
 
 const VerificationSuccess = () => {
   return (
-    <section className="password_reset_success">
-      <div className="password_reset_success_container">
+    <section className="verification_success">
+      <div className="verification_success_container">
         <img src={Success} alt="sucess pic" className="image_main" />
 
         <span>Password reset link sent to your email</span>
-        <button className="password_reset_success_btn">Send</button>
+        <button className="verification_success_btn">Send</button>
       </div>
     </section>
   );
