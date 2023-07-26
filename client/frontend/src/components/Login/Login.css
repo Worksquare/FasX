@@ -9,8 +9,8 @@
   flex-direction: column;
   justify-content: center;
   background-color: #ffffff;
-  max-width: 751px;
-  max-height: 795px;
+  max-width: 500px;
+  min-height: 500px;
   margin: 50px auto;
   padding: 30px;
   border-radius: 10px;
