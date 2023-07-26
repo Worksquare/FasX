@@ -1,10 +1,10 @@
-.login {
+.user_signup {
   background-color: #f8f8f8;
   min-height: 100vh;
   border: 1px solid white;
 }
 
-.login form {
+.user_signup form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,8 +15,7 @@
   padding: 30px;
   border-radius: 10px;
 }
-
-.login .login_header {
+.signup_header {
   text-align: center;
   font-weight: 700;
   font-size: 42.53px;
@@ -24,22 +23,38 @@
   color: #000000;
 }
 
-.login .login_welcome {
+.signup_welcome {
   text-align: center;
   font-weight: 400;
   font-size: 18px;
   line-height: 21.6px;
   color: #000000;
   margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.login .login_inputs {
+.signup_images {
   display: flex;
-  flex-direction: column;
-  margin-top: 2rem;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
 }
 
-.login .login_inputs input {
+.signup_images span {
+  font-weight: 500;
+  font-size: 26.58px;
+}
+
+.signup_images img {
+  height: 39.88px;
+  width: 39px;
+}
+
+.first_last {
+  display: flex;
+}
+
+.user_signup input {
   background-color: #ffffff;
   padding: 27px;
   border: none;
@@ -48,14 +63,7 @@
   margin-bottom: 1rem;
 }
 
-.login .forgot_password {
-  text-align: right;
-  color: #000000;
-  font-size: 26.58px;
-  font-weight: 400;
-}
-
-.login .login_btn {
+.signup_btn {
   border-radius: 10px;
   padding: 20px;
   gap: 10px;
@@ -65,37 +73,4 @@
   font-weight: 700;
   font-size: 34.41;
   margin-top: 1.5rem;
-}
-
-.login .login_btn:hover {
-  background-color: #f89955;
-}
-.login .login_remember {
-  margin-top: 1rem;
-}
-
-.login .login_remember .remember_me {
-  font-weight: 400;
-  font-size: 26.58px;
-  margin-left: 10px;
-}
-
-.login .login_icons .continue_with {
-  text-align: center;
-  font-size: 27px;
-  font-weight: 800;
-  line-height: 32px;
-  margin-bottom: 1.5rem;
-}
-
-.login .login_icons .login_images {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.login .login_icons .login_images img {
-  margin-left: 25px;
-  width: 60px;
-  height: 60px;
 }
