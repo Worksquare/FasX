@@ -1,20 +1,33 @@
 import { Box, Flex, Grid, GridItem, Image, Text } from "@chakra-ui/react";
 import React from "react";
+import Navbar from "../components/layout/navbar";
+import Description from "../components/molecules/Description";
+import Footer from "../components/molecules/Footer";
 
 const About = () => {
   const riderAbout = "../images/riderabout.png";
   const testimonies = [
-    { heading: "Lorem ipsum dolor sit amet consec", text: "-Lorem Ipsum" },
-    { heading: "Purus vitae bibendum gravida purus sem", text: "-Lorem Ipsum" },
     {
-      heading: "dolor sit amet consectetur. Purus vitae bibendum gravida ",
-      text: "-Lorem Ipsum",
+      heading:
+        "FastX is the best delivery service for graphic designers like me. It is fast, convenient, and easy to use. I can choose from different delivery partners, track my order, and communicate with the delivery partner.  FastX has helped me save time and money, and grow my business.",
+      text: "-Alice",
     },
-    { heading: "sit amet consectetur. ", text: "-Lorem Ipsum" },
+    {
+      heading:
+        "FastX is the most reliable and secure delivery service for online store owners like me. It helps me find the best delivery partner, verify the order details, and confirm the delivery completion. It also uses blockchain technology to make transactions secure and transparent. FastX has helped me increase customer satisfaction and loyalty, and reach new markets.",
+      text: "-Bob",
+    },
+    {
+      heading:
+        "FastX is the most flexible and transparent delivery service for online shoppers like me. It allows me to shop for different products from different brands online, and choose the best delivery option through the app. It also lets me track my order, and rate and review the delivery partner. FastX has made my online shopping more enjoyable and convenient.",
+      text: "-Kabiru",
+    },
   ];
   return (
     <>
-      <Box mt="178px" justifyContent="center" alignItems="center">
+      <Navbar />
+      <Description />
+      <Box mt="78px" justifyContent="center" alignItems="center">
         <Text
           w="186px"
           h="77px"
@@ -22,6 +35,7 @@ const About = () => {
           fontSize="64px"
           lineHeight="77px"
           mx="auto"
+          mb="14px"
         >
           {" "}
           Fast
@@ -37,22 +51,33 @@ const About = () => {
         </Text>
         <Text
           w="1033px"
-          h="216px"
+          h="468px"
           alignContent="center"
           justifyContent="center"
           fontWeight="500"
-          fontSize="45px"
-          lineHeight="53px"
+          fontSize="30px"
+          lineHeight="36px"
           mx="auto"
           mb="187px"
         >
           A fast growing and leading technology startup in Africa's largest
           economy, Nigeria, and has the potential to become one of the most
-          impactful companies in all of Africa.
+          impactful companies in all of Africa.Do you need a convenient and
+          reliable way to book delivery services online? Do you want to have
+          more choices and flexibility in terms of delivery options, prices, and
+          timings? Do you care about the quality and safety of your deliveries
+          and the environmental impact of your choices? If yes, then fastx is
+          the logistics application for you. fastx lets you book delivery
+          services online and track your orders in real-time. Unlike other
+          delivery platforms, fastx offers you more choices and flexibility in
+          terms of delivery options, prices, and timings. fastx also cares about
+          the quality and safety of your deliveries and the environmental impact
+          of your choices. With fastx, you can deliver with confidence and
+          convenience.
         </Text>
       </Box>
-      <Flex px="70px" bg="#FF6B00" alignItems="center" justifyContent="center">
-        <Box color="#FFF">
+      <Flex bg="#FF8E3D" alignItems="center" justifyContent="center">
+        <Box color="#FFF" mb="13px">
           <Text
             textAlign="center"
             color="#FFF"
@@ -63,66 +88,115 @@ const About = () => {
           >
             Our Riders
           </Text>
-          <Text w="600px" fontWeight="500" fontSize="30px">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
-            excepturi praesentium incidunt ad ratione? Molestiae neque nulla
-            culpa porro exercitationem, officiis itaque ipsum id. Sequi nemo
-            illum esse facilis ducimus?
+          <Text w="800px" fontWeight="500" fontSize="30px" ml="50px" >
+            FastX Riders is a team of dedicated and professional delivery
+            partners who work with FastX to provide fast and reliable delivery
+            services to customers across Nigeria. FastX Riders are equipped with
+            the latest technology and tools to ensure that they can deliver any
+            item, from electronics and gadgets to books and groceries, safely
+            and efficiently. FastX Riders are also trained and certified to
+            handle different modes of transportation, such as bike, car, truck,
+            or even drone, depending on the size and weight of the item and the
+            customer's preference.
           </Text>
         </Box>
-        <Image src={riderAbout} alt="Riders" w="650px" h="650px" mt="-150px" />
+        <Image src={riderAbout} alt="Riders" w="650px" h="700px" mt="-150px" />
       </Flex>
       <Box mt="67px">
         <Text
           color="#FF0000"
           fontWeight="700"
-          textAlign="center"
+          ml="200px"
           fontSize="64px"
           textDecoration="underline"
         >
           Our Goals
         </Text>
-        <Text fontWeight="400" fontSize="40px" mx="200px">
-          Lorem ipsum dolor sit amet consectetur. Purus vitae bibendum gravida
-          purus sem consectetur. Lacus id nec felis eu est viverra eget sit.
-          Vitae at nisl consequat potenti est pharetra sed purus ut. Iaculis
-          magnaLorem ipsum dolor sit amet consectetur. Purus vitae bibendum
-          gravida purus sem consectetur. Lacus id nec felis eu est viverra eget
-          sit. Vitae at nisl consequat potenti est pharetra sed purus ut.
-          Iaculis magna
-        </Text>
+        <Flex mx="50px" justifyContent="center" alignItems="center">
+          <Text fontWeight="400" fontSize="29px" w="737px" mr="42px">
+            The goal of FastX is to revolutionize the online delivery industry
+            in Nigeria by offering a smart and convenient platform that connects
+            customers with the best delivery partners for their needs. FastX
+            aims to provide customers with a variety of choices, flexibility,
+            transparency, and control over their deliveries. FastX also aims to
+            provide delivery partners with a rewarding and fulfilling career
+            opportunity that allows them to grow and earn more. FastX is
+            committed to delivering speed, quality, and satisfaction to both
+            customers and delivery partners.
+          </Text>
+          <Box bg="#F5F5F5" w="677px" h="401px" borderRadius="10px">
+            <Text
+              color="#009D52"
+              fontWeight="700"
+              textAlign="center"
+              fontSize="64px"
+              textDecoration="underline"
+              pt="80px"
+            >
+              Our Mission
+            </Text>
+            <Text
+              px="68px"
+              fontSize="28px"
+              fontWeight="400"
+              lineHeight="33px"
+              pt="10px"
+              textAlign="center"
+              alignContent="center"
+            >
+              fastx’s mission is to provide convenient, reliable delivery
+              services to users, while empowering delivery partners with
+              flexible and rewarding opportunities.
+            </Text>
+          </Box>
+        </Flex>
       </Box>
       <Box bg="#FF6B00" py="50px" mt="67px">
-        <Text color="#FFF"
+        <Text
+          color="#FFF"
           fontWeight="700"
           textAlign="center"
           fontSize="64px"
-          textDecoration="underline">Testimonies</Text>
+          textDecoration="underline"
+        >
+          Testimonies
+        </Text>
         <Grid
-          gridTemplateColumns="repeat(4, 1fr)"
+          gridTemplateColumns="repeat(3, 1fr)"
           mt="100px"
-          gridGap="28px"
-          px="70px"
+          gridGap="20px"
+          px="50px"
         >
           {testimonies.map((testimony, index) => (
             <GridItem
               key={index}
+              w="456px"
+              h="503px"
               bg="#FFF"
               borderRadius="8px"
               boxShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
               p="50px 11px"
               textAlign="center"
+              
             >
-              <Text fontSize="36px" fontWeight="400" mb="20px">
+              <Text fontSize="24px" fontWeight="400" mb="20px" >
                 {testimony.heading}
               </Text>
-              <Text textAlign="right" fontSize="36px" fontWeight="500" color="#AE4900">
+              <Text
+                textAlign="right"
+                fontSize="36px"
+                fontWeight="500"
+                color="#AE4900"
+                h="54px"
+                // pt="16px"
+              >
                 {testimony.text}
               </Text>
             </GridItem>
           ))}
         </Grid>
       </Box>
+      <Footer />
     </>
   );
 };
