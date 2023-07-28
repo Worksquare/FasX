@@ -1,6 +1,7 @@
 import "./App.css";
 import Login from "./components/Login/Login";
 import PasswordReset from "./components/Password reset/PasswordReset";
+import RiderSignUp from "./components/RiderSignUp/RiderSignUp";
 import PasswordResetSuccess from "./components/password reset success/PasswordResetSuccess";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <Login />
         <PasswordReset />
         <PasswordResetSuccess />
+        <RiderSignUp />
       </header>
     </div>
   );
