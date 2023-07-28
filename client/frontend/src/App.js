@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { ChakraProvider } from "@chakra-ui/react";
 import {
  
@@ -10,10 +11,22 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Blog from "./pages/blog";
 import ContactUs from "./pages/contactUs";
+=======
+import "./App.css";
+import Loading from "./components/Loading/Loading";
+import Login from "./components/Login/Login";
+import PasswordReset from "./components/Password reset/PasswordReset";
+
+import PasswordResetSuccess from "./components/password reset success/PasswordResetSuccess";
+
+// import UserSignup from "./components/user signup/UserSignup";
+import Verification from "./components/verification/Verification";
+>>>>>>> 18285082c93760dacdadf855459204e90724ede4
 
 
 const App = () => {
   return (
+<<<<<<< HEAD
     <ChakraProvider>
       {/* <Router>
         <Routes>
@@ -25,6 +38,18 @@ const App = () => {
       </Router> */}
       <About/>
     </ChakraProvider>
+=======
+    <div className="App">
+      <header className="App-header">
+        <Login />
+        <PasswordReset />
+        <PasswordResetSuccess />
+        {/* <UserSignup /> */}
+        <Verification />
+        <Loading />
+      </header>
+    </div>
+>>>>>>> 18285082c93760dacdadf855459204e90724ede4
   );
 };
 
