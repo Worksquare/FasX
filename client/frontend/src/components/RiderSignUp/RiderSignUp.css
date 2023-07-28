@@ -1,8 +1,43 @@
-.wrapper{
+section{
+  background-color: #F8F8F8;
+  margin: 5px;
 
-    max-width: 650px;
-    height: 1020px;
-    margin: 5rem auto;
+}
+
+/* navigation of the page */
+.signup-nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2rem;
+}
+
+.signup-nav__logo--main{
+   display: flex;
+   color: #000;
+   font-family: Inter;
+   font-size: 64px;
+   font-weight: 800;
+}
+ .gradient{
+   background: linear-gradient(90deg, #FF6B00 0%, #F00 100%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-family: Inter;
+   font-size: 64px;
+   font-weight: 900;
+}
+
+
+
+
+/* body of the login page */
+
+.wrapper{
+    max-width: 600px;
+    min-height: 500px;
+    margin: 1px auto;
     background-color: #fff;
     border-radius: 10px;
     padding: 2.3rem;
@@ -25,7 +60,16 @@
 
  .social{
     margin: 16px 0;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 3px;
  }
+ .social__text{
+   font-size: 24px;
+   font-weight: 500;
+   color: #000;
+}
  
  .social__icon{
     width: 30px;
@@ -54,6 +98,7 @@ form .form__wrapper{
    font-size: 20px;
    flex: 1;
    padding: 15px;
+   width: 200px;
   
 }
 
@@ -68,12 +113,28 @@ form .form__span{
    flex-basis: calc(100% - 10px);
    
 }
+
+form .form__button{
+   background-color: #FF8E3D;
+   color: #fff;
+   font-size: 25px;
+   cursor: pointer;
+   font-weight: 700;
+   margin-top: 10px;
+}
  
 
 @media (max-width: 600px) {
    .wrap {
      flex-direction: column;
+     flex-basis: 100%;
    }
+
+   .form__wrapper input{
+      width: 340px;
+      
+   }
+   
  
    form .form__span {
      flex-basis: 100%;

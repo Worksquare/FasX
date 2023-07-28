@@ -5,7 +5,24 @@ import Google from "../../images/google.png";
 
 const RiderSignUp = () => {
   return (
-    <section className='wrapper'>
+    <section>
+        <div className="signup-nav">
+            <div className="signup-nav__logo">
+                    <span className='signup-nav__logo--main'>
+                    Fast
+                        <span className="gradient"> X </span>
+                    </span>
+                    <span className='signup-nav__logo--text'>
+                    Choose Fast. Track Faster. Deliver on time.
+                    </span>
+            </div>
+            <div className="signup-nav__btn">
+                <button>
+                    login
+                </button>
+            </div>
+        </div>
+    <div className='wrapper'>
         <div className="heading">
             <h1 className='heading__title'>Register</h1>
             <span className='heading__content'>
@@ -18,7 +35,7 @@ const RiderSignUp = () => {
             </span>
   
                 <a href="/" className='social__icon'  >
-                    <img src={Google} alt="google icon" />
+                    <img src={Google} alt="google logo" />
                 </a>
                 <a href="/" className='social__icon' >
                     <img src={Facebook} alt="facebook logo" />
@@ -40,12 +57,14 @@ const RiderSignUp = () => {
                 </div>
                 
                 <input type="tel" placeholder='Phone Number' className='form__span'/>
-                <input type="password" placeholder="Passowrd" className='form__span' required />
+                <input type="password" placeholder="Password" className='form__span' required />
                 <input type="password" placeholder="Confirm Password" className='form__span' required />
+                <input type="button" value="CONTINUE" className='form__button' />
             </div>
- 
         </form>
 
+
+    </div>
 
     </section>
   )
