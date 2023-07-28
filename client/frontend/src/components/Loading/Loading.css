@@ -1,0 +1,16 @@
+.loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d4d4d;
+  min-height: 100vh;
+}
+
+.loader span {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 96px;
+  line-height: 110.44px;
+  color: #ffffff;
+}
