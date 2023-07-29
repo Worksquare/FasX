@@ -4,7 +4,6 @@ import Login from "./components/Login/Login";
 import PasswordReset from "./components/Password reset/PasswordReset";
 import PopUp1 from "./components/PopUp1/PopUp1.jsx";
 
-import RiderSignUp2 from "./components/RiderSignUp2/RiderSignUp2";
 
 import PasswordResetSuccess from "./components/password reset success/PasswordResetSuccess";
 
@@ -18,7 +17,6 @@ function App() {
         <Login />
         <PasswordReset />
         <PasswordResetSuccess />
-        <RiderSignUp2/>
         <PopUp1/>
         
       </header>
