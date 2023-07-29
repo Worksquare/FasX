@@ -41,7 +41,7 @@ const RiderSignUp2 = () => {
                     <input type="number" placeholder='Plate Number' />
                 </div>
                 
-                <input type="date" placeholder='Owned since' className='form__span'/>
+                <input type="text" placeholder='Owned since' className='form__span'/>
 
                 <div className="file-upload">
                     <input type="file" id="file-input" accept=".pdf, .doc, .docx"/>
@@ -49,6 +49,8 @@ const RiderSignUp2 = () => {
                         <img src={icon} alt="Upload Icon"/>
                     </div>
                 </div>
+
+                <p className='file-upload--text form__span'>Please scan and upload all vehicle documents </p>
 
                 <input type="button" value="CONTINUE" className='form__button form__span' />
             </div>
