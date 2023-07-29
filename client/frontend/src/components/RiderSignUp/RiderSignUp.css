@@ -29,6 +29,17 @@ section{
    font-weight: 900;
 }
 
+.signup-nav__btn button{
+   width: 116px;
+   height: 40px;
+   border-radius: 11.359px;
+   background: linear-gradient(90deg, #FF8E3D 0%, #F00 100%);
+   border: none;
+   color: #fff;
+   font-size: 23px;
+   font-weight: 500;
+   cursor: pointer;
+}
 
 
 

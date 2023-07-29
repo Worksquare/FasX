@@ -18,7 +18,7 @@ const RiderSignUp = () => {
             </div>
             <div className="signup-nav__btn">
                 <button>
-                    login
+                    Log in
                 </button>
             </div>
         </div>
