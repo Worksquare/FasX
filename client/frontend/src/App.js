@@ -9,11 +9,11 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Blog from "./pages/blog";
 import ContactUs from "./pages/contactUs";
-// import Loading from "./components/Loading/Loading";
-// import Login from "./components/Login/Login";
-// import PasswordReset from "./components/Password reset/PasswordReset";
-// import PasswordResetSuccess from "./components/password reset success/PasswordResetSuccess";
-// import Verification from "./components/verification/Verification";
+import Loading from "./components/Loading/Loading";
+import Login from "./components/Login/Login";
+import PasswordReset from "./components/Password reset/PasswordReset";
+import PasswordResetSuccess from "./components/password reset success/PasswordResetSuccess";
+import Verification from "./components/verification/Verification";
 
 const App = () => {
   return (
@@ -27,7 +27,7 @@ const App = () => {
         </Routes>
       </Router>
 
-      {/* <div className="App">
+      <div className="App">
         <header className="App-header">
           <Login />
           <PasswordReset />
@@ -35,7 +35,7 @@ const App = () => {
           <Verification />
           <Loading />
         </header>
-      </div> */}
+      </div>
     </ChakraProvider>
   );
   
