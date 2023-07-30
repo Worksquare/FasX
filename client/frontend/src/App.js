@@ -2,7 +2,7 @@ import "./App.css";
 // import Loading from "./components/Loading/Loading";
 import Login from "./components/Login/Login";
 import PasswordReset from "./components/Password reset/PasswordReset";
-import PopUp1 from "./components/PopUp1/PopUp1.jsx";
+import PopUp2 from "./components/PopUp2/PopUp2.jsx";
 
 
 import PasswordResetSuccess from "./components/password reset success/PasswordResetSuccess";
@@ -17,7 +17,7 @@ function App() {
         <Login />
         <PasswordReset />
         <PasswordResetSuccess />
-        <PopUp1/>
+        <PopUp2/>
         
       </header>
     </div>

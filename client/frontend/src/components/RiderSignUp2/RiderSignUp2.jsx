@@ -6,7 +6,7 @@ import icon from '../../images/Icon.png'
 
 const RiderSignUp2 = () => {
   return (
-    <section>
+    <section className='signup'>
          <div className="signup-nav">
             <div className="signup-nav__logo">
                     <span className='signup-nav__logo--main'>
