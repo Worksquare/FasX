@@ -5,7 +5,7 @@ import Google from "../../images/google.png";
 
 const RiderSignUp = () => {
   return (
-    <section>
+    <section className='signup'>
         <div className="signup-nav">
             <div className="signup-nav__logo">
                     <span className='signup-nav__logo--main'>
