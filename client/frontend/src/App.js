@@ -5,7 +5,7 @@ import PasswordReset from "./components/Password reset/PasswordReset";
 
 import PasswordResetSuccess from "./components/password reset success/PasswordResetSuccess";
 
-// import UserSignup from "./components/user signup/UserSignup";
+import UserSignup from "./components/user signup/UserSignup";
 import Verification from "./components/verification/Verification";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <Login />
         <PasswordReset />
         <PasswordResetSuccess />
-        {/* <UserSignup /> */}
+        <UserSignup />
         <Verification />
         <Loading />
       </header>
