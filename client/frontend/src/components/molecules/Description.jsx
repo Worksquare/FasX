@@ -2,9 +2,9 @@ import React from 'react'
 import { Flex, Image, Text } from '@chakra-ui/react'
 
 const Description = () => {
-  const van = '/assets/van.png'
-  const track = '/assets/track.png'
-  const clock = '/assets/clock.png'
+  const van = '../images/van.png'
+  const track = '../images/track.png'
+  const clock = '../images/clock.png'
 
   const descriptions = [
     {
