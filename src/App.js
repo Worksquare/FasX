@@ -18,7 +18,10 @@ function App() {
   return (
     <ChakraProvider>
       <div className="App">
+<<<<<<< HEAD
         <OrderPickUp/>
+=======
+>>>>>>> 28c2561 (done with the two pop ups)
         <header className="App-header">
       <Router>
         <Routes>
