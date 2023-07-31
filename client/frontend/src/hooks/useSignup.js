@@ -6,15 +6,18 @@ export const useSignup = () => {
   const [isLoading, setIsLoading] = useState(null);
   const { dispatch } = useAuthContext();
 
-  const signup = async (email, password) => {
+  const signup = async (firstName, lastName, email, password) => {
     setIsLoading(true);
     setError(null);
 
-    const response = await fetch("", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
-    });
+    const response = await fetch(
+      "https://fastx-logistic-api.onrender.com/v1/auth/register",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ firstName, lastName, email, password }),
+      }
+    );
     const json = await response.json();
 
     if (!response.ok) {

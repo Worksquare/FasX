@@ -1,65 +1,73 @@
-import { Box, Flex, Image, Link, Text } from '@chakra-ui/react'
-import React, { useState } from 'react'
-import Dashboard from '../layouts/Dashboard'
-import OrderPickup from '../layouts/OrderPickup'
-import Wallet from '../layouts/Wallet'
-import Track from '../layouts/Track'
-import Profile from '../layouts/Profile'
-import CustomerCare from '../layouts/CustomerCare'
-import { BiLogOutCircle } from 'react-icons/bi'
-import { LuHome } from 'react-icons/lu'
-import { CiWallet } from 'react-icons/ci'
-import { GiSettingsKnobs } from 'react-icons/gi'
-import { BiMessageDetail } from 'react-icons/bi'
-import { BsBookmarkPlus } from 'react-icons/bs'
+import { Box, Flex, Image, Link, Text } from "@chakra-ui/react";
+import React, { useState } from "react";
+// import Dashboard from "../layouts/Dashboard";
+import OrderPickup from "../layout/OrderPickup";
+// import Wallet from "../layouts/Wallet";
+// import Track from "../layouts/Track";
+// import Profile from "../layouts/Profile";
+// import CustomerCare from "../layouts/CustomerCare";
+import { BiLogOutCircle } from "react-icons/bi";
+// import { LuHome } from "react-icons/lu";
+// import { CiWallet } from "react-icons/ci";
+// import { GiSettingsKnobs } from "react-icons/gi";
+// import { BiMessageDetail } from "react-icons/bi";
+import { BsBookmarkPlus } from "react-icons/bs";
+// import { useAuthContext } from "../../hooks/useAuthContext";
+import { useLogout } from "../../hooks/useLogout";
 
 const Sidebar = () => {
+  const { logout } = useLogout();
+  // const {user}= useAuthContext()
+
+  const handleClick = () => {
+    logout();
+  };
   const sidebarLinks = [
-    {
-      icon: <LuHome />,
-      title: 'Home',
-      href: '#!',
-      content: <Dashboard />,
-    },
+    // {
+    //   icon: <LuHome />,
+    //   title: "Home",
+    //   href: "#!",
+    //   content: <Dashboard />,
+    // },
     {
       icon: <BsBookmarkPlus />,
-      title: 'Order Pickup',
-      href: '#!',
+      title: "Order Pickup",
+      href: "#!",
       content: <OrderPickup />,
     },
-    {
-      icon: <CiWallet />,
-      title: 'Wallet',
-      href: '#!',
-      content: <Wallet />,
-    },
-    {
-      icon: 'track_icon',
-      title: 'Track',
-      href: '#!',
-      content: <Track />,
-    },
-    {
-      icon: <GiSettingsKnobs />,
-      title: 'Profile',
-      href: '#!',
-      content: <Profile />,
-    },
-    {
-      icon: <BiMessageDetail />,
-      title: 'Customer Care',
-      href: '#!',
-      content: <CustomerCare />,
-    },
-  ]
+    // {
+    //   icon: <CiWallet />,
+    //   title: "Wallet",
+    //   href: "#!",
+    //   content: <Wallet />,
+    // },
+    // {
+    //   icon: "track_icon",
+    //   title: "Track",
+    //   href: "#!",
+    //   // content: <Track />,
+    // },
+    // {
+    //   icon: <GiSettingsKnobs />,
+    //   title: "Profile",
+    //   href: "#!",
+    //   // content: <Profile />,
+    // },
+    // {
+    //   icon: <BiMessageDetail />,
+    //   title: "Customer Care",
+    //   href: "#!",
+    //   // content: <CustomerCare />,
+    // },
+  ];
 
-  const [currentPage, setCurrentPage] = useState(sidebarLinks[0].content)
+  const [currentPage, setCurrentPage] = useState(sidebarLinks[0].content);
 
   const handleSidebarContent = (link) => {
-    setCurrentPage(link.content)
-  }
+    setCurrentPage(link.content);
+  };
 
-  const logo = '/assets/logo.png'
+  const logo = "/assets/logo.png";
 
   return (
     <Box bg="#F8F8F8">
@@ -79,7 +87,8 @@ const Sidebar = () => {
           color="#FF0000"
         >
           <BiLogOutCircle />
-          <Text>Logout</Text>
+          {/* "https://fastx-logistic-api.onrender.com/v1/auth/login" */}
+          <Text onClick={handleClick}>Logout</Text>
         </Link>
       </Flex>
 
@@ -106,15 +115,14 @@ const Sidebar = () => {
                 {link.icon}
                 <Text>{link.title}</Text>
               </Flex>
-            )
+            );
           })}
         </Flex>
 
         <Box>{currentPage}</Box>
       </Flex>
     </Box>
-  )
-}
+  );
+};
 
-export default Sidebar
-
+export default Sidebar;

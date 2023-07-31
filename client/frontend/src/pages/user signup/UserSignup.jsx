@@ -20,7 +20,7 @@ const UserSignup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await signup(number, password);
+    await signup(firstName, lastName, email, password);
   };
   return (
     <section className="user_signup">

@@ -7,8 +7,10 @@ import Blog from "./pages/blog";
 import ContactUs from "./pages/contactUs";
 import Login from "./pages/Login/Login";
 import UserSignup from "./pages/user signup/UserSignup";
+import RiderList from "./components/riders list/RiderList";
 
 import "./App.css";
+// import OrderPickup from "./components/layout/OrderPickup";
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Signup" element={<UserSignup />} />
+          <Route path="/orderpickup" element={<RiderList />} />
         </Routes>
       </Router>
     </ChakraProvider>
