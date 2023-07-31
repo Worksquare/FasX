@@ -1,8 +1,8 @@
-import { Flex, Heading, Image, Text } from '@chakra-ui/react'
-import React from 'react'
+import { Flex, Heading, Image, Link, Text } from "@chakra-ui/react";
+import React from "react";
 
 const Rider = () => {
-  const motorbike = '../images/motorbike.png'
+  const motorbike = "../images/motorbike.png";
 
   return (
     <Flex
@@ -10,7 +10,7 @@ const Rider = () => {
       alignItems="center"
       justifyContent="center"
       px="120px"
-      my="40px"
+      my="70px"
       position="relative"
     >
       <Flex
@@ -23,7 +23,8 @@ const Rider = () => {
         ml="-40px"
         pr="50px"
         w={614}
-        h={450}
+        h="600px"
+        textAlign="right"
       >
         <Heading
           fontFamily="Inter"
@@ -32,17 +33,21 @@ const Rider = () => {
           // lineHeight="79px"
           color="#101010"
         >
-          Become a Rider today
+          Become a <span style={{ color: "#FF0000" }}>Rider</span> today
         </Heading>
-        <Text
-          fontWeight="400"
-          fontSize="36px"
-          fontFamily="Inter"
-          lineHeight="40px"
-          mt="40px"
-        >
-          SignUp
-        </Text>
+        <Link href="/signup">
+          <Text
+            fontWeight="400"
+            fontSize="30px"
+            fontFamily="Inter"
+            lineHeight="40px"
+            mt="289px"
+            pl="70px"
+            color="#D85B00"
+          >
+            SignUp
+          </Text>
+        </Link>
       </Flex>
 
       <Image
@@ -54,7 +59,7 @@ const Rider = () => {
         objectFit="cover"
       />
     </Flex>
-  )
-}
+  );
+};
 
-export default Rider
+export default Rider;
