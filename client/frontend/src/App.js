@@ -9,30 +9,6 @@ import Login from "./pages/Login/Login";
 import UserSignup from "./pages/user signup/UserSignup";
 
 import "./App.css";
-<<<<<<< HEAD
-// import Loading from "./components/Loading/Loading";
-import Login from "./components/Login/Login";
-import PasswordReset from "./components/Password reset/PasswordReset";
-import PopUp2 from "./components/PopUp2/PopUp2.jsx";
-
-
-import PasswordResetSuccess from "./components/password reset success/PasswordResetSuccess";
-
-// import UserSignup from "./components/user signup/UserSignup";
-// import Verification from "./components/verification/Verification";
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Login />
-        <PasswordReset />
-        <PasswordResetSuccess />
-        <PopUp2/>
-        
-      </header>
-    </div>
-=======
 
 function App() {
   return (
@@ -48,7 +24,6 @@ function App() {
         </Routes>
       </Router>
     </ChakraProvider>
->>>>>>> f26dd2684bbbbee08b6efb0c09e0da0f8ea1adad
   );
 }
 
