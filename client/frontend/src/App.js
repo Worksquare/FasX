@@ -16,6 +16,7 @@ import { useAuthContext } from "./hooks/useAuthContext";
 import DashboardLayout from "./components/layout/DashboardLayout";
 
 import "./App.css";
+// import Navbar from "./components/layout/navbar";
 // import OrderPickup from "./components/layout/OrderPickup";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
   return (
     <ChakraProvider>
       <Router>
+        {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
