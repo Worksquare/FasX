@@ -1,22 +1,22 @@
-import { Box, Button, Flex, Heading, Image, Text } from '@chakra-ui/react'
-import React from 'react'
-import Blog from '../molecules/Blog'
+import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import React from "react";
+import Blog from "../../pages/blog";
 
 const Dashboard = () => {
-  const user = '/assets/user.png'
-  const bikeDelivery = '/assets/bike-delivery.png'
-  const vanDelivery = '/assets/van-delivery.png'
+  const user = "/assets/user.png";
+  const bikeDelivery = "/assets/bike-delivery.png";
+  const vanDelivery = "/assets/van-delivery.png";
 
   const deliveries = [
     {
-      type: 'Bike Delivery',
+      type: "Bike Delivery",
       image: bikeDelivery,
     },
     {
-      type: 'Van Delivery',
+      type: "Van Delivery",
       image: vanDelivery,
     },
-  ]
+  ];
 
   return (
     <Flex justifyContent="space-between" p="40px" gap="84px">
@@ -103,7 +103,7 @@ const Dashboard = () => {
 
       <Blog />
     </Flex>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;

@@ -9,10 +9,17 @@ import Login from "./pages/Login/Login";
 import UserSignup from "./pages/user signup/UserSignup";
 import RiderList from "./components/riders list/RiderList";
 
+//context
+import { useAuthContext } from "./hooks/useAuthContext";
+
+//pages
+import DashboardLayout from "./components/layout/DashboardLayout";
+
 import "./App.css";
 // import OrderPickup from "./components/layout/OrderPickup";
 
 function App() {
+  const { user } = useAuthContext();
   return (
     <ChakraProvider>
       <Router>
@@ -24,6 +31,10 @@ function App() {
           <Route path="/Login" element={<Login />} />
           <Route path="/Signup" element={<UserSignup />} />
           <Route path="/orderpickup" element={<RiderList />} />
+          <Route
+            path="/dashboard"
+            element={user ? <DashboardLayout /> : <Login />}
+          />
         </Routes>
       </Router>
     </ChakraProvider>
