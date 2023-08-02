@@ -1,23 +1,17 @@
 import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
-<<<<<<< HEAD
-import Blog from "../molecules/Blogs";
-// import Blog from "../molecules/Blogs";
 
-// import Blog from "../molecules/Blog"
+import Blogs from "../molecules/Blogs";
 
-const Dashboard = () => {
-  const user = "../images/user.png";
-  const bikeDelivery = "../images/bike-delivery.png";
-  const vanDelivery = "../images/van-delivery.png";
-=======
+
+
 import Blog from "../../pages/blog";
 
 const Dashboard = () => {
   const user = "/assets/user.png";
   const bikeDelivery = "/assets/bike-delivery.png";
   const vanDelivery = "/assets/van-delivery.png";
->>>>>>> f48da46401446f7ae6c77096a4578e970d43871e
+
 
   const deliveries = [
     {
@@ -113,7 +107,7 @@ const Dashboard = () => {
         </Button>
       </Box>
 
-      <Blog />
+      <Blogs />
     </Flex>
   );
 };
