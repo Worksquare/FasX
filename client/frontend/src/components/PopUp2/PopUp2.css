@@ -5,16 +5,16 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.5); 
     z-index: 9999;
   }
   
-  .popup {
+  .popup2 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 400px;
+    max-width: 480px;
     min-height: 400px;
     background-color: #fff;
     border-radius: 10px;
@@ -31,8 +31,8 @@
     font-weight: 500;
   }
 
-.list-name, .list-price,
- .total-name, .total-price{
+.list-name2, .list-price2,
+ .total-name2, .total-price2{
     color: #000;
     font-weight: 500;
     font-size: 15px;
@@ -40,7 +40,7 @@
   }
 
 
-  .total-name, .total-price{
+  .total-name2, .total-price2{
     font-weight: 700;
     font-size: 17px;
     margin-top: 5px;
@@ -48,23 +48,36 @@
 
   
 
-  .popup h3{
+  .popup2 h3{
     padding: 5px;
     color: #000;
-    font-size: 25px;
+    font-size: 21px;
     font-weight: 700;
     width: 250px;
     margin-top: 5px;
     margin-left: 10px;
   }
 
-  .popup .content{
+  .popup2 .content{
     width: 400px;
     padding: 10px 20px;
   }
 
-  
-  .btn-green a{
-    text-decoration: none;
-    color: #fff;
+
+  .payment-type{
+    width: 400px;
+    margin: 10px auto;
   }
+
+  .payment-type .row{
+    display: flex;
+    gap: 9px;
+  }
+
+  .payment-type ul  {
+    list-style: none;
+    margin-top: 19px;
+    font-size: 10px;
+  }
+  
+  

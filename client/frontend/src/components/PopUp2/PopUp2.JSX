@@ -1,21 +1,13 @@
 import React from 'react'
-import { useState } from 'react'
+
 import './PopUp2.css'
 
 const PopUp2 = () => {
-    const [showPopup, setShowPopup] = useState(false);
-    const PopupCard = () => {
-        setShowPopup (!showPopup);
-    }
 
   return (
-    <div>  
-        {/* this button is only to show the pop up card */}
-        <button className='btn-green' onClick={PopupCard}>show card</button>
-
-        {showPopup && (
+  
     <div className="popup-container">  
-          <div className='popup'>
+          <div className='popup2'>
             <h3>
             Payment Info
             </h3>
@@ -26,48 +18,48 @@ const PopUp2 = () => {
               <div className="content">
  
               <div className='pop-flex'>
-                  <span className="list-name">
+                  <span className="list-name2">
                   Delivery Fee
                   </span>
-                  <span className="list-price">
+                  <span className="list-price2">
                   #490.00
                   </span>
               </div>
 
               
               <div className='pop-flex'>
-                  <span className="list-name">
+                  <span className="list-name2">
                   Service Fee
                   </span>
-                  <span className="list-price">
+                  <span className="list-price2">
                   #50.00
                   </span>
               </div>
 
               <div className='pop-flex'>
-                  <span className="list-name">
+                  <span className="list-name2">
                   Voucher
                   </span>
-                  <span className="list-price">
+                  <span className="list-price2">
                   -#20.00
                   </span>
             </div>
 
               <div className='pop-flex'>
-                  <span className="total-name">
+                  <span className="total-name2">
                       Total
                   </span>
-                  <span className="total-price">
+                  <span className="total-price2">
                       #520.00
                   </span>
               </div>
 
             </div> 
 
-             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 920 1" fill="none">
+             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 920 2" fill="none">
                 <path d="M0 0.640625L919.911 0.640708" stroke="#D7D7D7" stroke-width="1.25671"/>
             </svg> 
-
+  
             <div className="payment-type">
                <div className="row">
                   <input type="checkbox" />
@@ -93,19 +85,17 @@ const PopUp2 = () => {
                  <li>Rider will confirm transfer before releasing item</li>
                </ul>
               
+               <div className="btn-green"> 
+                    Confirm 
+              </div>     
               
             </div>
-              {/* <div className="btn-green">
-                  <a href="http://">
-                    Confirm
-                  </a> 
-              </div>      */}
-          </div>
+             
 
-          
+
+          </div>
         </div>
-         )}
-    </div>
+      
   )
 }
 

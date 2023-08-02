@@ -17,12 +17,24 @@
   font-weight: 700;
   margin-top: 50px;
   cursor: pointer;
+  color: #fff;
+}
+
+.gradient{
+  background: linear-gradient(90deg, #FF6B00 0%, #F00 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Inter;
+  font-size: 54px;
+  font-weight: 900;
 }
 
 
 
 
 
+/* styles for the rider sign up component */
 
 .signup{
   background-color: #F8F8F8;
@@ -56,15 +68,7 @@
 }
 
 
-.gradient{
-  background: linear-gradient(90deg, #FF6B00 0%, #F00 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: Inter;
-  font-size: 54px;
-  font-weight: 900;
-}
+
 
 .wrapper{
   max-width: 600px;
