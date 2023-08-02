@@ -17,6 +17,25 @@
   font-weight: 700;
   margin-top: 50px;
   cursor: pointer;
+}
+
+
+
+
+
+/* utilities */
+
+.btn-green{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 22.54px;
+  background: #00E075;
+  padding: 9px;
+  font-size: 19px;
+  font-weight: 700;
+  margin-top: 50px;
+  cursor: pointer;
   color: #fff;
 }
 

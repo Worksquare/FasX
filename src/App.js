@@ -9,25 +9,24 @@ import Login from "./pages/Login/Login";
 import UserSignup from "./pages/user signup/UserSignup";
 
 import "./App.css";
+import Loading from "./components/Loading/Loading";
+import Login from "./components/Login/Login";
+import PasswordReset from "./components/Password reset/PasswordReset";
+import RiderSignUp2 from "./components/RiderSignUp2/RiderSignUp2";
 
 
-
+import UserSignup from "./components/user signup/UserSignup";
+import Verification from "./components/verification/Verification";
 
 function App() {
   return (
-    <ChakraProvider>
-      <div className="App">
-        <header className="App-header">
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contactUs" element={<ContactUs />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/Signup" element={<UserSignup />} />
-        </Routes>
-      </Router>
+    <div className="App">
+      <header className="App-header">
+        <Login />
+        <PasswordReset />
+        <PasswordResetSuccess />
+        <RiderSignUp2/>
+        
       </header>
       </div>
     </ChakraProvider>
