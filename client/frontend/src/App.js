@@ -10,6 +10,12 @@ import UserSignup from "./pages/user signup/UserSignup";
 
 import "./App.css";
 
+// import Loading from "./components/Loading/Loading";
+import Login from "./components/Login/Login";
+import PasswordReset from "./components/Password reset/PasswordReset";
+import PopUp2 from "./components/PopUp2/PopUp2.jsx";
+
+
 
 
 
@@ -29,6 +35,7 @@ function App() {
         </Routes>
       </Router>
       </header>
+
       </div>
     </ChakraProvider>
 
