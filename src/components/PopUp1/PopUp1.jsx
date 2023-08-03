@@ -2,7 +2,6 @@ import React from 'react'
 import { useState } from 'react'
 import PopUp2 from '../PopUp2/PopUp2';
 
-
 import './PopUp1.css'
 
 const PopUp1 = () => {
@@ -19,12 +18,6 @@ const PopUp1 = () => {
           setShowPopup2(true);
           setShowPopup (false);
         };
-
-    const [showPopup, setShowPopup] = useState(false);
-    const PopupCard = () => {
-        setShowPopup (!showPopup);
-    }
-
 
 
       
@@ -84,28 +77,17 @@ const PopUp1 = () => {
 
               <div className="btn-green" onClick={OpenPopUp2}>
                     Proceed
-
-              <div className="btn-green">
-             <a href="http://">
-             Proceed
-                </a> 
-
               </div>
 
             </div>       
           </div>
         </div>
+         )}
 
         {showPopup2 && <PopUp2 />}
       </div>
 
-  ); 
+  );
 };
-
-        </div>
-
-  )
-}
-
 
 export default PopUp1

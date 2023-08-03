@@ -7,26 +7,29 @@ import Blog from "./pages/blog";
 import ContactUs from "./pages/contactUs";
 import Login from "./pages/Login/Login";
 import UserSignup from "./pages/user signup/UserSignup";
+import OrderPickUp from './pages/OrderPickUp/OrderPickUp'
 
 import "./App.css";
-import Loading from "./components/Loading/Loading";
-import Login from "./components/Login/Login";
-import PasswordReset from "./components/Password reset/PasswordReset";
-import RiderSignUp2 from "./components/RiderSignUp2/RiderSignUp2";
 
 
-import UserSignup from "./components/user signup/UserSignup";
-import Verification from "./components/verification/Verification";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Login />
-        <PasswordReset />
-        <PasswordResetSuccess />
-        <RiderSignUp2/>
-        
+    <ChakraProvider>
+      <div className="App">
+        <OrderPickUp/>
+        <header className="App-header">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contactUs" element={<ContactUs />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Signup" element={<UserSignup />} />
+        </Routes>
+      </Router>
       </header>
       </div>
     </ChakraProvider>
