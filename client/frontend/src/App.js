@@ -18,20 +18,20 @@ import VerificationError from "./components/verification/verificationError";
 import { useAuthContext } from "./hooks/useAuthContext";
 import DashboardLayout from "./components/layout/DashboardLayout";
 
+
+
+const breakpoints = {
+  sm: "320px",
+  md: "500px",
+  lg: "960px",
+  xl: "1200px",
+  "2xl": "1400px",
+};
+const theme = extendTheme({ breakpoints });
+
 function App() {
   const { user } = useAuthContext();
-
   console.log(user);
-  const breakpoints = {
-    sm: "320px",
-    md: "500px",
-    lg: "960px",
-    xl: "1200px",
-    "2xl": "1400px",
-  };
-  const theme = extendTheme({ breakpoints });
-
-  function App() {
     return (
       <ChakraProvider theme={theme}>
         <div className="App">
@@ -65,5 +65,5 @@ function App() {
       </ChakraProvider>
     );
   }
-}
+
 export default App;

@@ -7,27 +7,27 @@ export const useSignup = () => {
   const { dispatch } = useAuthContext();
 
 
+  // const signup = async (firstName, surName,  phoneNumber, address, city,  email, password) => {
+  //   setIsLoading(true);
+  //   setError(null);
+
+  //   const response = await fetch(
+  //     "https://fastx-logistic-api.onrender.com/v1/auth/register",
+  //     {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify({ firstName, surName, phoneNumber, address, city, email, password }),
+  //     }
+  //   );
+
   const signup = async (firstName, surName,  phoneNumber, address, city,  email, password) => {
-    setIsLoading(true);
-    setError(null);
-
-    const response = await fetch(
-      "https://fastx-logistic-api.onrender.com/v1/auth/register",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ firstName, surName, phoneNumber, address, city, email, password }),
-      }
-    );
-
-  const signup = async (email, password) => {
     setIsLoading(true);
     setError(null);
 
     const response = await fetch("", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ firstName, surName, phoneNumber, address, city, email, password }),
     });
 
     const json = await response.json();
@@ -49,5 +49,4 @@ export const useSignup = () => {
   };
 
   return { signup, isLoading, error };
-}
 };
