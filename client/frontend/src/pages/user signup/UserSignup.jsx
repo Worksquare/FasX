@@ -7,20 +7,21 @@ import Facebook from "../../images/facebook.png";
 import Google from "../../images/google.png";
 
 const UserSignup = () => {
-  const [number, setNumber] = useState("");
+  // const [number, setNumber] = useState("");
   const [email, setEmail] = useState("");
   const [address, setAddress] = useState("");
   const [city, setCity] = useState("");
   const [password, setPassword] = useState("");
   const [firstName, setFirstName] = useState("");
-  const [lastName, setLasttName] = useState("");
+  const [surName, setSurName] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
   const { signup, error, isLoading } = useSignup();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await signup(firstName, lastName, email, password);
+    await signup(firstName, surName, phoneNumber, address, city,  email, password);
   };
   return (
     <section className="user_signup">
@@ -43,9 +44,9 @@ const UserSignup = () => {
 
           <input
             type="text"
-            placeholder="last name"
-            onChange={(e) => setLasttName(e.target.value)}
-            value={lastName}
+            placeholder="surn name"
+            onChange={(e) => setSurName(e.target.value)}
+            value={surName}
           />
         </div>
         <input
@@ -71,8 +72,8 @@ const UserSignup = () => {
         <input
           placeholder="Phone number"
           type="text"
-          onChange={(e) => setNumber(e.target.value)}
-          value={number}
+          onChange={(e) => setPhoneNumber(e.target.value)}
+          value={phoneNumber}
         />
         <input
           type="password"

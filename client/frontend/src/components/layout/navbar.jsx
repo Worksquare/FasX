@@ -1,7 +1,6 @@
 import { Box, Button, Flex, Image, Link } from "@chakra-ui/react";
-
 import React from "react";
-import {  useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const navlinks = [
@@ -25,10 +24,16 @@ const Navbar = () => {
 
   const logo = "../images/logo.png";
   const router = useLocation();
+
   return (
-    <Flex alignItems="center" justifyContent="space-between" p="35px 120px">
+    <Box
+      display={{ sm: "none", md: "none", lg: "flex", xl: "flex" }}
+      alignItems="center"
+      justifyContent="space-between"
+      p="35px 120px"
+    >
       <Link href="/">
-      <Image src={logo} alt="logo" />
+        <Image src={logo} alt="logo" />
       </Link>
 
       <Box>
@@ -66,20 +71,20 @@ const Navbar = () => {
           </Button>
         </Link>
         <Link href="/signup">
-        <Button
-          border="2px solid #FF8E3D"
-          padding="11px"
-          bg="none"
-          color="#FF8E3D"
-          fontFamily="Colfax"
-          fontWeight="500"
-          fontSize="27px"
-        >
-          SignUp
-        </Button>
+          <Button
+            border="2px solid #FF8E3D"
+            padding="11px"
+            bg="none"
+            color="#FF8E3D"
+            fontFamily="Colfax"
+            fontWeight="500"
+            fontSize="27px"
+          >
+            SignUp
+          </Button>
         </Link>
       </Flex>
-    </Flex>
+    </Box>
   );
 };
 

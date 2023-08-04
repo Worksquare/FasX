@@ -73,7 +73,7 @@ const Footer = () => {
     <>
       <Flex justifyContent="space-between" bg="#454545" p="30px 120px">
         <Box color="white" fontFamily="Colfax" fontSize="20px">
-          <Heading color="#00E075">Newsletter</Heading>
+          <Heading color="#F06500">Newsletter</Heading>
           <Text fontWeight="500">
             Get the latest news about our services and products
           </Text>
@@ -93,7 +93,7 @@ const Footer = () => {
 
           <Box fontWeight="700">
             <Text>Service Hours: Mondays-Saturdays 9am 8pm</Text>
-            <Text>Email: fastX@gmail.com</Text>
+            <Text>Email: hello@FastX.com</Text>
             <Text>Phone No: 0987654321</Text>
           </Box>
         </Box>
@@ -107,7 +107,7 @@ const Footer = () => {
                 fontFamily="Colfax"
                 fontSize="20px"
               >
-                <Heading color="#00E075" mb="10px">
+                <Heading color="#F06500" mb="10px">
                   {footerLink.title}
                 </Heading>
                 {footerLink.links.map((link, index) => {
