@@ -2,18 +2,18 @@ import { useState } from "react";
 import { useAuthContext } from "./useAuthContext";
 
 export const useOtp = () => {
+  localStorage.setItem("accessToken", accessToken)
+  const [getUserToken, setUserToken] = useState()
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(null);
   const { dispatch } = useAuthContext();
   const otp = async (otp) => {
     setIsLoading(true);
     setError(null);
-    const apiUrl = " waiting for the backend....";
-
     try {
       const headers = {
         "Content-Type": "application/json",
-        Authorization: `Bearer YOUR_TOKEN`,
+        Authorization: `${setUserToken} https://fastx-logistic-api.onrender.com/v1/auth/send-verification-email`,
       };
 
       const response = await fetch(apiUrl, {
