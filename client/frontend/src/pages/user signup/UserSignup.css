@@ -10,9 +10,9 @@
   justify-content: center;
   background-color: #ffffff;
   max-width: 500px;
-  min-height: 70vh;
+  min-height: 500px;
   margin: 50px auto;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
 }
 .signup_header {
@@ -52,17 +52,11 @@
 
 .first_last {
   display: flex;
-  max-width: 100%;
-}
-
-.first_last input {
-  display: flex;
-  width: 50%;
 }
 
 .user_signup input {
   background-color: #ffffff;
-  padding: 13px;
+  padding: 27px;
   border: none;
   border: 1px solid rgb(235, 232, 232);
   border-radius: 5px;

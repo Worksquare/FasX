@@ -1,14 +1,15 @@
-import { Flex, Heading, Image, Text } from "@chakra-ui/react";
-import React from "react";
+import { Flex, Heading, Image, Text } from '@chakra-ui/react'
+import React from 'react'
 
 const HeroSection = () => {
-  const heroImage = "../images/heroImage.png"
+  const heroImage = '../immages/heroImage.png'
+
   return (
     <Flex
       alignItems="center"
       justifyContent="center"
       px="120px"
-      my="70px"
+      my="40px"
       position="relative"
     >
       <Flex
@@ -16,7 +17,7 @@ const HeroSection = () => {
         alignItems="center"
         justifyContent="center"
         bg="#F8F8F8"
-        borderRadius="20px"
+        borderRadius="10px"
         zIndex="3"
         mr="-40px"
         pr="50px"
@@ -50,14 +51,12 @@ const HeroSection = () => {
           // lineHeight="79px"
           color="#101010"
         >
-          Choose <span style={{ color: "#FF0000" }}>Fast,</span>{" "}
-          <span style={{ color: "#FF0000" }}>Flexible,</span> and
-          <span style={{ color: "#FF0000" }}> Reliable</span>
+          Choose Fast, Flexible and Reliable
         </Heading>
 
         <Text
           fontWeight="400"
-          fontSize="30px"
+          fontSize="36px"
           fontFamily="Inter"
           lineHeight="40px"
           mt="40px"
@@ -70,13 +69,13 @@ const HeroSection = () => {
       <Image
         src={heroImage}
         alt="hero-image"
-        w="850px"
+        w="800px"
         h="500px"
         borderRadius="10px"
         objectFit="cover"
       />
     </Flex>
-  );
-};
+  )
+}
 
-export default HeroSection;
+export default HeroSection

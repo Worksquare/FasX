@@ -21,7 +21,7 @@ const RiderSignUp = () => {
     await signup(firstName, surName, phoneNumber, address, city,  email, password);
   };
   return (
-    <section>
+    <section className='signup'>
         <div className="signup-nav">
             <div className="signup-nav__logo">
                     <span className='signup-nav__logo--main'>

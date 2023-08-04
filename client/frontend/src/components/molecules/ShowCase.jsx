@@ -1,16 +1,15 @@
-import { Flex, Heading, Image, Text } from "@chakra-ui/react";
-import React from "react";
+import { Flex, Heading, Image, Text } from '@chakra-ui/react'
+import React from 'react'
 
 const Showcase = () => {
-  const heroImage2 = "../images/heroImage2.png";
-  // const heroImage = "../images/heroImage.png"
+  const heroImage2 = '../images/heroImage2.png'
   return (
     <Flex
       flexDirection="row-reverse"
       alignItems="center"
       justifyContent="center"
       px="120px"
-      my="70px"
+      my="40px"
       position="relative"
     >
       <Flex
@@ -18,13 +17,12 @@ const Showcase = () => {
         alignItems="center"
         justifyContent="center"
         bg="#F8F8F8"
-        borderRadius="20px"
+        borderRadius="10px"
         zIndex="3"
         ml="-40px"
         pr="50px"
-        w={600}
+        w={614}
         h={450}
-        textAlign="right"
       >
         <Heading
           fontFamily="Inter"
@@ -32,15 +30,12 @@ const Showcase = () => {
           fontSize="60px"
           // lineHeight="79px"
           color="#101010"
-          w="570px"
-          h="156px"
         >
-          Get your items <span style={{ color: "#FF0000" }}>Fast, </span> and{" "}
-          <span style={{ color: "#FF0000" }}>Safe</span>
+          Get your items Fast and Safe
         </Heading>
         <Text
           fontWeight="400"
-          fontSize="34px"
+          fontSize="36px"
           fontFamily="Inter"
           lineHeight="40px"
           mt="40px"
@@ -59,7 +54,7 @@ const Showcase = () => {
         objectFit="cover"
       />
     </Flex>
-  );
-};
+  )
+}
 
-export default Showcase;
+export default Showcase

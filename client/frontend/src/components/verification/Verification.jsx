@@ -7,7 +7,7 @@ const Verification = () => {
       <form>
         <h1 className="verification_header">Verification</h1>
         <p className="verification_welcome">
-          Please enter the four digits sent to your Email
+          Please enter the four digits sent to your phone number
         </p>
         <div className="otp">
           <input type="password" />

@@ -21,7 +21,11 @@ const UserSignup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+<<<<<<< HEAD
     await signup(firstName, surName, phoneNumber, address, city,  email, password);
+=======
+    await signup(number, password);
+>>>>>>> 05cdc21e83bd0d31f63a2baa1876def6bc2f60b0
   };
   return (
     <section className="user_signup">

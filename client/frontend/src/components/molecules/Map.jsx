@@ -1,8 +1,8 @@
-import React from "react";
-import { Flex, Heading, Image, Text } from "@chakra-ui/react";
+import React from 'react'
+import { Flex, Heading, Image, Text } from '@chakra-ui/react'
 
 const Map = () => {
-  const map = "../images/map.png";
+  const map = '../images/map.png'
 
   return (
     <Flex
@@ -18,12 +18,12 @@ const Map = () => {
         alignItems="center"
         justifyContent="center"
         bg="#F8F8F8"
-        borderRadius="20px"
+        borderRadius="10px"
         zIndex="3"
         ml="-40px"
         pr="50px"
-        w="646px"
-        h="507px"
+        w={614}
+        h={450}
       >
         <Heading
           fontFamily="Inter"
@@ -31,18 +31,15 @@ const Map = () => {
           fontSize="60px"
           // lineHeight="79px"
           color="#101010"
-          textAlign="right"
         >
-          Any <span style={{ color: "#FF0000" }}>Where</span> <br /> Any{" "}
-          <span style={{ color: "#FF0000" }}>Time</span>
+          Any Where <br /> Any Time
         </Heading>
         <Text
-          fontWeight="600"
-          fontSize="19px"
+          fontWeight="400"
+          fontSize="36px"
           fontFamily="Inter"
           lineHeight="40px"
-          mt="230px"
-          color="#FF0000"
+          mt="40px"
         >
           Currently Only in Lagos
         </Text>
@@ -57,7 +54,7 @@ const Map = () => {
         objectFit="cover"
       />
     </Flex>
-  );
-};
+  )
+}
 
-export default Map;
+export default Map

@@ -18,7 +18,7 @@ const Footer = () => {
       links: [
         {
           name: "About Us",
-          href: "/about",
+          href: "#!",
         },
         {
           name: "Where to Find us",
