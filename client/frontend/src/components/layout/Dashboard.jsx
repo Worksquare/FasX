@@ -3,10 +3,6 @@ import React from "react";
 
 import Blogs from "../molecules/Blogs";
 
-
-
-import Blog from "../../pages/blog";
-
 const Dashboard = () => {
   const user = "/assets/user.png";
   const bikeDelivery = "/assets/bike-delivery.png";
