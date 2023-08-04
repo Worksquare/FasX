@@ -3,12 +3,13 @@ import btngrey from '../../images/btngrey.png'
 import bike from '../../images/bk 1.png'
 import truck from '../../images/bk 2.png'
 import './OrderPickUp.css'
+import SideBar from '../../components/SideBar/SideBar'
 const OrderPickUp = () => {
   return (
     <section>
         <div className="pickup">
             <aside>
-                side bar
+              <SideBar/>
             </aside>
             <main>
                 <header>
