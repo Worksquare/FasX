@@ -7,14 +7,9 @@ import Blog from "./pages/blog";
 import ContactUs from "./pages/contactUs";
 import Login from "./pages/Login/Login";
 import UserSignup from "./pages/user signup/UserSignup";
+import OrderPickUp from './pages/OrderPickUp/OrderPickUp'
 
 import "./App.css";
-
-// import Loading from "./components/Loading/Loading";
-import Login from "./components/Login/Login";
-import PasswordReset from "./components/Password reset/PasswordReset";
-import PopUp2 from "./components/PopUp2/PopUp2.jsx";
-
 
 
 
@@ -23,6 +18,10 @@ function App() {
   return (
     <ChakraProvider>
       <div className="App">
+<<<<<<< HEAD
+        <OrderPickUp/>
+=======
+>>>>>>> 28c2561 (done with the two pop ups)
         <header className="App-header">
       <Router>
         <Routes>
@@ -35,7 +34,6 @@ function App() {
         </Routes>
       </Router>
       </header>
-
       </div>
     </ChakraProvider>
 

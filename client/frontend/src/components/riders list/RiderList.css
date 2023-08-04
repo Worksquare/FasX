@@ -1,0 +1,79 @@
+.cont {
+  border: 2px solid red;
+  width: 50%;
+  margin: auto;
+}
+
+.rider_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rider_list .rider_list_img {
+  border: 2px solid red;
+  flex: 0.5;
+  display: flex;
+}
+
+.name h4 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #101010;
+}
+
+.name .n_rides {
+  font-size: 24px;
+  color: #bababa;
+}
+
+.name .bike {
+  font-size: 24px;
+  color: #bababa;
+}
+.rider_list_art {
+  border: 2px solid red;
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.rider_list_art_cont {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.minutes {
+  color: #ff0000;
+  font-weight: 500;
+  font-size: 25px;
+}
+.btn_art {
+  padding: 5px;
+  width: 102px;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: #ff8e3d;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.ratings {
+  font-weight: 500;
+  font-size: 24px;
+  color: #bababa;
+}
+
+.btn_view {
+  width: 160px;
+  background-color: #bababa;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+  color: #ffffff;
+  margin-left: 10px;
+}
