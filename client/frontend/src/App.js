@@ -15,6 +15,8 @@ import "./App.css";
 import OrderPickup from "./components/layout/OrderPickup";
 import VerificationSuccess from "./components/verification/verificationSuccess";
 import VerificationError from "./components/verification/verificationError";
+import { useAuthContext } from "./hooks/useAuthContext";
+import DashboardLayout from "./components/layout/DashboardLayout";
 
 function App() {
   const { user } = useAuthContext();
