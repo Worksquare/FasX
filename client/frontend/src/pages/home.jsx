@@ -10,7 +10,7 @@ import Footer from "../components/molecules/Footer";
 
 const Home = () => {
   return (
-    <Box>
+    <Box  >
       <Navbar />
       <Description />
 

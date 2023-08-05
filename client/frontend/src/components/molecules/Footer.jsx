@@ -3,6 +3,7 @@ import {
   Button,
   Flex,
   Heading,
+  Image,
   Input,
   InputGroup,
   InputRightElement,
@@ -69,16 +70,36 @@ const Footer = () => {
       ],
     },
   ];
+
+  const logo = "../images/logo.png";
   return (
     <>
-      <Flex justifyContent="space-between" bg="#454545" p="30px 120px">
+      <Box
+        display={{ sm: "block", xl: "flex" }}
+        justifyContent="space-between"
+        bg="#454545"
+        p={{ sm: "18px", xl: "30px 120px" }}
+      >
         <Box color="white" fontFamily="Colfax" fontSize="20px">
-          <Heading color="#F06500">Newsletter</Heading>
-          <Text fontWeight="500">
+          <Heading
+            fontSize={{
+              sm: "20px",
+              xl: "27px",
+            }}
+            color="#F06500"
+          >
+            Newsletter
+          </Heading>
+          <Text
+            fontSize={{
+              sm: "14px",
+            }}
+            fontWeight="500"
+          >
             Get the latest news about our services and products
           </Text>
 
-          <InputGroup border="#B7B7B7" w="500px" mb="24px" mt="10px">
+          <InputGroup border="#B7B7B7" maxW="500px" mb="24px" mt="10px">
             <Input
               type="search"
               placeholder="Enter password"
@@ -91,14 +112,47 @@ const Footer = () => {
             </InputRightElement>
           </InputGroup>
 
-          <Box fontWeight="700">
+          <Box
+            fontSize={{
+              sm: "14px",
+            }}
+            fontWeight="700"
+          >
             <Text>Service Hours: Mondays-Saturdays 9am 8pm</Text>
             <Text>Email: hello@FastX.com</Text>
             <Text>Phone No: 0987654321</Text>
           </Box>
         </Box>
 
-        <Flex gap="100px">
+        <Flex
+          display={{ sm: "block", xl: "flex" }}
+          mt={{ sm: "60px", xl: "0px" }}
+          gap={{
+            sm: "16px",
+            xl: "100px",
+          }}
+        >
+          <Link
+            display={{
+              sm: "block",
+              xl: "none",
+            }}
+            mb="8px"
+            href="/"
+          >
+            <Image
+              src={logo}
+              alt="logo"
+              w={{
+                sm: "112px",
+                xl: "100%",
+              }}
+              h={{
+                sm: "47px",
+                xl: "100%",
+              }}
+            />
+          </Link>
           {footerLinks.map((footerLink, index) => {
             return (
               <Box
@@ -106,8 +160,19 @@ const Footer = () => {
                 color="white"
                 fontFamily="Colfax"
                 fontSize="20px"
+                mb={{
+                  sm: "16px",
+                  xl: "0",
+                }}
               >
-                <Heading color="#F06500" mb="10px">
+                <Heading
+                  fontSize={{
+                    sm: "20px",
+                    xl: "27px",
+                  }}
+                  color="#F06500"
+                  mb="10px"
+                >
                   {footerLink.title}
                 </Heading>
                 {footerLink.links.map((link, index) => {
@@ -115,7 +180,10 @@ const Footer = () => {
                     <Link
                       key={index}
                       display="block"
-                      mb="20px"
+                      mb={{
+                        sm: "8px",
+                        xl: "20px",
+                      }}
                       href={link.href}
                     >
                       {link.name}
@@ -126,7 +194,7 @@ const Footer = () => {
             );
           })}
         </Flex>
-      </Flex>
+      </Box>
 
       <Flex
         flexDirection="column"
