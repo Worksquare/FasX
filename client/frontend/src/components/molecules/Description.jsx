@@ -1,27 +1,31 @@
-import React from 'react'
-import { Flex, Image, Text } from '@chakra-ui/react'
+import React from "react";
+import { Flex, Image, Text } from "@chakra-ui/react";
 
 const Description = () => {
-  const van = '../images/van.png'
-  const track = '../images/track.png'
-  const clock = '../images/clock.png'
+  const van = "../images/van.png";
+  const track = "../images/track.png";
+  const clock = "../images/clock.png";
 
   const descriptions = [
     {
       imageUrl: van,
-      text: 'Send and Pickup any item with us',
+      text: "Send and Pickup any item with us",
     },
     {
       imageUrl: track,
-      text: 'Track your items and be in touch',
+      text: "Track your items and be in touch",
     },
     {
       imageUrl: clock,
-      text: 'Get your items right on time',
+      text: "Get your items right on time",
     },
-  ]
+  ];
   return (
     <Flex
+      display={{
+        sm: "none",
+        xl: "flex",
+      }}
       bg="#BABABA"
       px="120px"
       alignItems="center"
@@ -41,7 +45,7 @@ const Description = () => {
         </Flex>
       ))}
     </Flex>
-  )
-}
+  );
+};
 
-export default Description
+export default Description;

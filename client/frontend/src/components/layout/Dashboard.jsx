@@ -4,9 +4,9 @@ import React from "react";
 import Blogs from "../molecules/Blogs";
 
 const Dashboard = () => {
-  const user = "/assets/user.png";
-  const bikeDelivery = "/assets/bike-delivery.png";
-  const vanDelivery = "/assets/van-delivery.png";
+  const user = "../images/user.png";
+  const bikeDelivery = "../images/bike-delivery.png";
+  const vanDelivery = "../images/van-delivery.png";
 
 
   const deliveries = [

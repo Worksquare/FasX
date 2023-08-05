@@ -7,7 +7,7 @@ import Blog from "./pages/blog";
 import ContactUs from "./pages/contactUs";
 import Login from "./pages/Login/Login";
 import UserSignup from "./pages/user signup/UserSignup";
-import OrderPickUp from "./pages/OrderPickUp/OrderPickUp";
+// import OrderPickUp from "./pages/OrderPickUp/OrderPickUp";
 
 import "./App.css";
 
@@ -16,9 +16,7 @@ import OrderPickup from "./components/layout/OrderPickup";
 import VerificationSuccess from "./components/verification/verificationSuccess";
 import VerificationError from "./components/verification/verificationError";
 import { useAuthContext } from "./hooks/useAuthContext";
-import DashboardLayout from "./components/layout/DashboardLayout";
-
-
+import Sidebar from "./components/molecules/Sidebar";
 
 const breakpoints = {
   sm: "320px",
@@ -34,10 +32,10 @@ function App() {
   console.log(user);
     return (
       <ChakraProvider theme={theme}>
-        <div className="App">
-          <OrderPickUp />
+        {/* <div className="App"> */}
+          {/* <OrderPickUp /> */}
 
-          <header className="App-header">
+          {/* <header className="App-header"> */}
             <Router>
               <Routes>
                 <Route path="/" element={<Home />} />
@@ -48,20 +46,20 @@ function App() {
                 <Route path="/Signup" element={<UserSignup />} />
 
                 <Route path="/Orderpickup" element={<OrderPickup />} />
-                <Route path="/verify email" element={<VerificationSuccess />} />
+                <Route path="/verify_email" element={<VerificationSuccess />} />
                 <Route
-                  path="/verification email"
+                  path="/verification_email"
                   element={<VerificationError />}
                 />
 
                 <Route
                   path="/dashboard"
-                  element={user ? <DashboardLayout /> : <Login />}
+                  element={user ? <Sidebar /> : <Login />}
                 />
               </Routes>
             </Router>
-          </header>
-        </div>
+          {/* </header> */}
+        {/* // </div> */}
       </ChakraProvider>
     );
   }

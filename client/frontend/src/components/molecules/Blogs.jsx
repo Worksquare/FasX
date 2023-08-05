@@ -2,10 +2,10 @@ import { Box, Heading, Image } from "@chakra-ui/react";
 import React from "react";
 
 const Blog = () => {
-  const blog1 = "/images/blog1.png";
-  const blog2 = "/images/blog2.png";
-  const blog3 = "/images/blog3.png";
-  const blog4 = "/images/blog4.png";
+  const blog1 = "../images/blog1.png";
+  const blog2 = "../images/blog2.png";
+  const blog3 = "../images/blog3.png";
+  const blog4 = "../images/blog4.png";
 
   const blogImgs = [blog1, blog2, blog3, blog4];
   return (

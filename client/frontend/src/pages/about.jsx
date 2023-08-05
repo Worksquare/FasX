@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "../components/layout/navbar";
 import Description from "../components/molecules/Description";
 import Footer from "../components/molecules/Footer";
-
+// import about from "../images/about"
 const About = () => {
   const riderAbout = "../images/riderabout.png";
   const testimonies = [
@@ -23,59 +23,66 @@ const About = () => {
       text: "-Kabiru",
     },
   ];
+
+  const about = "/images/about_bg.png";
   return (
     <>
       <Navbar />
       <Description />
-      <Box mt="78px" justifyContent="center" alignItems="center">
-        <Text
-          w="186px"
-          h="77px"
-          fontWeight="900"
-          fontSize="64px"
-          lineHeight="77px"
-          mx="auto"
-          mb="14px"
-        >
-          {" "}
-          Fast
-          <Box
-            as="span"
-            bgGradient="linear(to-r, #FF6B00, #FF0000)"
-            bgClip="text"
-            display="inline-block"
-            ml="1"
-          >
-            X
-          </Box>
-        </Text>
-        <Text
-          w="1033px"
-          h="468px"
-          alignContent="center"
+
+      <Flex justifyContent="center" alignItems="center">
+        <Image
+          src={about}
+          alt="about-image"
+          position="relative"
+          w="100vw"
+          h="632px"
+        />
+
+        <Flex
+          position="absolute"
+          flexDirection="column"
+          alignItems="center"
           justifyContent="center"
-          fontWeight="500"
-          fontSize="30px"
-          lineHeight="36px"
-          mx="auto"
-          mb="187px"
+          h="210px"
+          m="auto"
+          color="white"
         >
-          A fast growing and leading technology startup in Africa's largest
-          economy, Nigeria, and has the potential to become one of the most
-          impactful companies in all of Africa.Do you need a convenient and
-          reliable way to book delivery services online? Do you want to have
-          more choices and flexibility in terms of delivery options, prices, and
-          timings? Do you care about the quality and safety of your deliveries
-          and the environmental impact of your choices? If yes, then fastx is
-          the logistics application for you. fastx lets you book delivery
-          services online and track your orders in real-time. Unlike other
-          delivery platforms, fastx offers you more choices and flexibility in
-          terms of delivery options, prices, and timings. fastx also cares about
-          the quality and safety of your deliveries and the environmental impact
-          of your choices. With fastx, you can deliver with confidence and
-          convenience.
-        </Text>
-      </Box>
+          <Text
+            w="450px"
+            fontWeight="900"
+            fontSize="64px"
+            lineHeight="77px"
+            mx="auto"
+            mb="14px"
+            color="#fff"
+          >
+            We are Fast
+            <Box
+              as="span"
+              bgGradient="linear(to-r, #FF6B00, #FF0000)"
+              bgClip="text"
+              display="inline-block"
+              ml="1"
+            >
+              X
+            </Box>
+          </Text>
+          <Text
+            w="1033px"
+            fontWeight="500"
+            fontSize="30px"
+            lineHeight="36px"
+            mx="auto"
+            textAlign="center"
+          >
+            FastX is a fast growing and leading technology startup in Africa's
+            largest economy, Nigeria, and has the potential to become one of the
+            most impactful companies in all of Africa
+          </Text>
+        </Flex>
+      </Flex>
+
       <Flex bg="#FF8E3D" alignItems="center" justifyContent="center">
         <Box color="#FFF" mb="13px">
           <Text
@@ -88,7 +95,7 @@ const About = () => {
           >
             Our Riders
           </Text>
-          <Text w="800px" fontWeight="500" fontSize="30px" ml="50px" >
+          <Text w="800px" fontWeight="500" fontSize="30px" ml="50px">
             FastX Riders is a team of dedicated and professional delivery
             partners who work with FastX to provide fast and reliable delivery
             services to customers across Nigeria. FastX Riders are equipped with
@@ -100,13 +107,20 @@ const About = () => {
             customer's preference.
           </Text>
         </Box>
-        <Image src={riderAbout} alt="Riders" w="650px" h="700px" mt="-150px" />
+        <Image
+          src={riderAbout}
+          alt="Riders"
+          w="650px"
+          h="700px"
+          zIndex="3"
+          mt="-150px"
+        />
       </Flex>
-      <Box mt="67px">
+      <Box mt="67px" justifyContent="center" alignItems="center" mx="120px">
         <Text
           color="#FF0000"
           fontWeight="700"
-          ml="200px"
+          textAlign="left"
           fontSize="64px"
           textDecoration="underline"
         >
@@ -124,14 +138,14 @@ const About = () => {
             committed to delivering speed, quality, and satisfaction to both
             customers and delivery partners.
           </Text>
-          <Box bg="#F5F5F5" w="677px" h="401px" borderRadius="10px">
+          <Box  w="677px" h="401px">
             <Text
               color="#009D52"
               fontWeight="700"
-              textAlign="center"
+              textAlign="right"
               fontSize="64px"
               textDecoration="underline"
-              pt="80px"
+            
             >
               Our Mission
             </Text>
@@ -177,9 +191,8 @@ const About = () => {
               boxShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
               p="50px 11px"
               textAlign="center"
-              
             >
-              <Text fontSize="24px" fontWeight="400" mb="20px" >
+              <Text fontSize="24px" fontWeight="400" mb="20px">
                 {testimony.heading}
               </Text>
               <Text

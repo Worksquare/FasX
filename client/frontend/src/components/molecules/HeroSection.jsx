@@ -1,15 +1,21 @@
-import { Flex, Heading, Image, Text } from '@chakra-ui/react'
-import React from 'react'
+import { Flex, Heading, Image, Text } from "@chakra-ui/react";
+import React from "react";
 
 const HeroSection = () => {
-  const heroImage = '../immages/heroImage.png'
-
+  const heroImage = "../images/heroImage.png";
   return (
     <Flex
+      flexDirection={{
+        sm: "column-reverse",
+        xl: "row",
+      }}
       alignItems="center"
       justifyContent="center"
-      px="120px"
-      my="40px"
+      px={{
+        sm: "0",
+        xl: "120px",
+      }}
+      my="70px"
       position="relative"
     >
       <Flex
@@ -17,49 +23,63 @@ const HeroSection = () => {
         alignItems="center"
         justifyContent="center"
         bg="#F8F8F8"
-        borderRadius="10px"
+        borderRadius="20px"
         zIndex="3"
-        mr="-40px"
-        pr="50px"
-        w={614}
+        mr={{
+          sm: "0",
+          xl: "-40px",
+        }}
+        pr={{
+          sm: "0",
+          xl: "50px",
+        }}
+        w={{
+          sm: "354px",
+          xl: "614px",
+        }}
         h={450}
       >
-        {/* <Heading
-          fontFamily="Inter"
-          fontWeight="800"
-          fontSize="60px"
-          // lineHeight="79px"
-          color="#101010"
-        >
-          Choose
-          <Box as="span" display="block" color="#FF0000">
-            Fast
-          </Box>
-          ,
-          <Box as="span" display="block" color="#FF0000">
-            Flexible
-          </Box>
-          and
-          <Box as="span" display="block" color="#FF0000">
-            Reliable
-          </Box>
-        </Heading> */}
         <Heading
           fontFamily="Inter"
           fontWeight="800"
-          fontSize="60px"
-          // lineHeight="79px"
+          fontSize={{
+            sm: "40px",
+            xl: "60px",
+          }}
+          textAlign={{
+            sm: "center",
+            xl: "center",
+          }}
           color="#101010"
         >
-          Choose Fast, Flexible and Reliable
+          Choose <span style={{ color: "#FF0000" }}>Fast,</span>{" "}
+          <span style={{ color: "#FF0000" }}>Flexible,</span> and
+          <span style={{ color: "#FF0000" }}> Reliable</span>
         </Heading>
 
         <Text
           fontWeight="400"
-          fontSize="36px"
+          fontSize={{
+            sm: "16px",
+            xl: "30px",
+          }}
           fontFamily="Inter"
-          lineHeight="40px"
-          mt="40px"
+          lineHeight={{
+            sm: "20px",
+            xl: "40px",
+          }}
+          w={{
+            sm: "297px",
+            xl: "400px"
+          }}
+          mt={{
+            sm: "17px",
+            xl: "40px",
+          }}
+          textAlign={{
+            sm: "center",
+            xl: "center",
+          }}
         >
           Do you need a convenient and reliable way to book delivery services
           online?
@@ -69,13 +89,19 @@ const HeroSection = () => {
       <Image
         src={heroImage}
         alt="hero-image"
-        w="800px"
-        h="500px"
+        w={{
+          sm: "100%",
+          xl: "850px",
+        }}
+        h={{
+          sm: "311px",
+          xl: "500px",
+        }}
         borderRadius="10px"
         objectFit="cover"
       />
     </Flex>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;
