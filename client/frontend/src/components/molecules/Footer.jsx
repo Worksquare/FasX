@@ -105,6 +105,8 @@ const Footer = () => {
               placeholder="Enter password"
               borderRadius="34px"
             />
+
+            
             <InputRightElement w="112px">
               <Button type="submit" borderRadius="28px" p="11px">
                 Subscribe
