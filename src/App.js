@@ -7,7 +7,6 @@ import Blog from "./pages/blog";
 import ContactUs from "./pages/contactUs";
 import Login from "./pages/Login/Login";
 import UserSignup from "./pages/user signup/UserSignup";
-import OrderPickUp from './pages/OrderPickUp/OrderPickUp'
 
 import "./App.css";
 
@@ -18,7 +17,6 @@ function App() {
   return (
     <ChakraProvider>
       <div className="App">
-        <OrderPickUp/>
         <header className="App-header">
       <Router>
         <Routes>

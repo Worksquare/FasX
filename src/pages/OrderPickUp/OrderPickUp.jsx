@@ -2,24 +2,45 @@ import React from 'react'
 import btngrey from '../../images/btngrey.png'
 import bike from '../../images/bk 1.png'
 import truck from '../../images/bk 2.png'
+import logout from '../../images/logoutcircle.svg'
 import './OrderPickUp.css'
+import {RxHamburgerMenu} from 'react-icons/rx'
 import SideBar from '../../components/SideBar/SideBar'
+import { useState } from 'react'
+
+
 const OrderPickUp = () => {
+
+    const [showHamburger, setShowHamburger] = useState(true)
+
+    const handleHamburgerClick = () => {
+        setShowHamburger(!showHamburger);
+      };
+
+
+
   return (
     <section>
         <div className="pickup">
             <aside>
-              <SideBar/>
+          {showHamburger ?
+                <div className="hamburger">
+                    <RxHamburgerMenu size={30}  onClick={handleHamburgerClick}/>
+                </div> :
+              <SideBar/>}
+
+                <SideBar/>
+        
+              
             </aside>
             <main>
                 <header>
-                    
-                <span className="icon">
-                    icon
-                </span>
-                <button>
-                    logout
-                </button>
+                    <span className="icon">
+                       <img src= {logout} alt="icon" />
+                    </span>
+                    <button className='btn-text'>
+                        Logout
+                    </button>
                 </header>
                 <div className="heading">
                     New pickup
@@ -84,9 +105,13 @@ const OrderPickUp = () => {
                 </div>
 
                 <section>
-                    <form action="">
-                    <input type="number" name="" id="" placeholder='Enter voucher code' className='' />
-                    <input type="button" value="Order pickup" className='form__button'/>
+                    <form>
+                        <div className="container">
+                                <input type="number" name="" id="" placeholder='Enter voucher code' className='code' />
+                                <div className="card">Voucher Card</div>
+                        </div>
+                        
+                        <input type="button" value="Order pickup" className='form__button'/>
                     </form>
                 </section>
 
