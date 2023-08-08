@@ -18,6 +18,8 @@ import VerificationError from "./components/verification/verificationError";
 import { useAuthContext } from "./hooks/useAuthContext";
 import Sidebar from "./components/molecules/Sidebar";
 
+import VerifyEmail from "./components/verification/verifyEmail";
+
 const breakpoints = {
   sm: "320px",
   md: "500px",
@@ -30,38 +32,32 @@ const theme = extendTheme({ breakpoints });
 function App() {
   const { user } = useAuthContext();
   console.log(user);
-    return (
-      <ChakraProvider theme={theme}>
-        {/* <div className="App"> */}
-          {/* <OrderPickUp /> */}
+  return (
+    <ChakraProvider theme={theme}>
+      {/* <div className="App"> */}
+      {/* <OrderPickUp /> */}
 
-          {/* <header className="App-header"> */}
-            <Router>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contactUs" element={<ContactUs />} />
-                <Route path="/blog" element={<Blog />} />
-                <Route path="/Login" element={<Login />} />
-                <Route path="/Signup" element={<UserSignup />} />
+      {/* <header className="App-header"> */}
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contactUs" element={<ContactUs />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Signup" element={<UserSignup />} />
+          <Route path="/verifyEmail" element={<VerifyEmail />} />
 
-                <Route path="/Orderpickup" element={<OrderPickup />} />
-                <Route path="/verify_email" element={<VerificationSuccess />} />
-                <Route
-                  path="/verification_email"
-                  element={<VerificationError />}
-                />
+          <Route path="/Orderpickup" element={<OrderPickup />} />
+          <Route path="/verify_email" element={<VerificationSuccess />} />
+          <Route path="/verification_email" element={<VerificationError />} />
 
-                <Route
-                  path="/dashboard"
-                  element={user ? <Sidebar /> : <Login />}
-                />
-              </Routes>
-            </Router>
-          {/* </header> */}
-        {/* // </div> */}
-      </ChakraProvider>
-    );
-  }
+          <Route path="/dashboard" element={user ? <Sidebar /> : <Login />} />
+        </Routes>
+      </Router>
+   
+    </ChakraProvider>
+  );
+}
 
 export default App;

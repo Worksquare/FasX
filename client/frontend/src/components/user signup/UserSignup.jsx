@@ -20,7 +20,7 @@ const UserSignup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await signup(number, password);
+    await signup(email, password);
   };
   return (
     <section className="user_signup">
@@ -86,10 +86,11 @@ const UserSignup = () => {
           onChange={(e) => setConfirmPassword(e.target.value)}
           value={confirmPassword}
         />
-
-        <button className="signup_btn" disabled={isLoading}>
-          Continue
-        </button>
+        <a href="/verifyEmail">
+          <button className="signup_btn" disabled={isLoading}>
+            Continue
+          </button>
+        </a>
         {error && <div className="error">{error}</div>}
       </form>
     </section>
