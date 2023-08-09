@@ -1,11 +1,11 @@
-import { Box, Flex, Grid, GridItem, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, GridItem, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import Navbar from "../components/layout/navbar";
 import Description from "../components/molecules/Description";
 import Footer from "../components/molecules/Footer";
 // import about from "../images/about"
 const About = () => {
-  const riderAbout = "../images/riderabout.png";
+  const riderAbout = "../images/riderImage.png";
   const testimonies = [
     {
       heading:
@@ -25,6 +25,7 @@ const About = () => {
   ];
 
   const about = "/images/about_bg.png";
+  const choose = "/images/choose.png";
   return (
     <>
       <Navbar />
@@ -35,8 +36,9 @@ const About = () => {
           src={about}
           alt="about-image"
           position="relative"
-          w="100vw"
-          h="632px"
+          w={{ sm: "100%", xl: "100vw" }}
+          h={{ sm: "651px", xl: "632px" }}
+          objectFit="cover"
         />
 
         <Flex
@@ -49,10 +51,10 @@ const About = () => {
           color="white"
         >
           <Text
-            w="450px"
+            // w={{ sm: "310px", xl: "450px" }}
             fontWeight="900"
-            fontSize="64px"
-            lineHeight="77px"
+            fontSize={{ sm: "32px", xl: "64px" }}
+            lineHeight={{ sm: "38px", xl: "77px" }}
             mx="auto"
             mb="14px"
             color="#fff"
@@ -69,10 +71,11 @@ const About = () => {
             </Box>
           </Text>
           <Text
-            w="1033px"
+            maxW="1033px"
+            px={{ sm: "35px", xl: "0" }}
             fontWeight="500"
-            fontSize="30px"
-            lineHeight="36px"
+            fontSize={{ sm: "16px", xl: "30px" }}
+            lineHeight={{ sm: "20px", xl: "36px" }}
             mx="auto"
             textAlign="center"
           >
@@ -83,99 +86,128 @@ const About = () => {
         </Flex>
       </Flex>
 
-      <Flex bg="#FF8E3D" alignItems="center" justifyContent="center">
+      <Box
+        display={{ sm: "block", xl: "flex" }}
+        bg="#FF8E3D"
+        alignItems="center"
+        justifyContent="center"
+      >
         <Box color="#FFF" mb="13px">
           <Text
             textAlign="center"
             color="#FFF"
             fontWeight="700"
-            fontSize="50px"
+            fontSize={{ sm: "24px", xl: "50px" }}
             textDecoration="underline"
             mb="10px"
           >
             Our Riders
           </Text>
-          <Text w="800px" fontWeight="500" fontSize="30px" ml="50px">
+          <Text
+            maxW="800px"
+            fontWeight="500"
+            fontSize={{ sm: "16px", xl: "25px" }}
+            mx={{ sm: "20px", xl: "50px" }}
+          >
             FastX Riders is a team of dedicated and professional delivery
             partners who work with FastX to provide fast and reliable delivery
-            services to customers across Nigeria. FastX Riders are equipped with
-            the latest technology and tools to ensure that they can deliver any
-            item, from electronics and gadgets to books and groceries, safely
-            and efficiently. FastX Riders are also trained and certified to
-            handle different modes of transportation, such as bike, car, truck,
-            or even drone, depending on the size and weight of the item and the
-            customer's preference.
+            services to customers across Nigeria. <br /> <br /> FastX Riders are
+            equipped with the latest technology and tools to ensure that they
+            can deliver any item, from electronics and gadgets to books and
+            groceries, safely and efficiently. <br /> <br /> FastX Riders are
+            also trained and certified to handle different modes of
+            transportation, such as bike, car, truck, or even drone, depending
+            on the size and weight of the item and the customer's preference.
           </Text>
         </Box>
         <Image
           src={riderAbout}
           alt="Riders"
-          w="650px"
-          h="700px"
+          w={{ sm: "221px", xl: "524px" }}
+          h={{ sm: "322px", xl: "760px" }}
           zIndex="3"
-          mt="-150px"
+          mt={{ sm: "-30px", xl: "-140px" }}
+          ml={{ sm: "153px", xl: "0" }}
         />
-      </Flex>
-      <Box mt="67px" justifyContent="center" alignItems="center" mx="120px">
-        <Text
-          color="#FF0000"
-          fontWeight="700"
-          textAlign="left"
-          fontSize="64px"
-          textDecoration="underline"
-        >
-          Our Goals
-        </Text>
-        <Flex mx="50px" justifyContent="center" alignItems="center">
-          <Text fontWeight="400" fontSize="29px" w="737px" mr="42px">
+      </Box>
+      <Box
+        display={{ sm: "block", xl: "flex" }}
+        mt="67px"
+        gap="100px"
+        justifyContent="space-between"
+        alignItems="flex-start"
+        px={{ sm: "25px", xl: "120px" }}
+      >
+        <Box>
+          <Text
+            color="#FF0000"
+            fontWeight="700"
+            textAlign={{ sm: "center", xl: "left" }}
+            fontSize={{ sm: "24px", xl: "64px" }}
+            textDecoration="underline"
+          >
+            Our Goals
+          </Text>
+          <Text
+            fontWeight="400"
+            fontSize={{ sm: "16px", xl: "22px" }}
+            lineHeight="26px"
+            textAlign="justify"
+            maxW="737px"
+          >
             The goal of FastX is to revolutionize the online delivery industry
             in Nigeria by offering a smart and convenient platform that connects
-            customers with the best delivery partners for their needs. FastX
-            aims to provide customers with a variety of choices, flexibility,
-            transparency, and control over their deliveries. FastX also aims to
-            provide delivery partners with a rewarding and fulfilling career
-            opportunity that allows them to grow and earn more. FastX is
-            committed to delivering speed, quality, and satisfaction to both
-            customers and delivery partners.
+            customers with the best delivery partners for their needs.
+            <br />
+            <br />
+            FastX aims to provide customers with a variety of choices,
+            flexibility, transparency, and control over their deliveries. FastX
+            also aims to provide delivery partners with a rewarding and
+            fulfilling career opportunity that allows them to grow and earn
+            more.
           </Text>
-          <Box  w="677px" h="401px">
-            <Text
-              color="#009D52"
-              fontWeight="700"
-              textAlign="right"
-              fontSize="64px"
-              textDecoration="underline"
-            
-            >
-              Our Mission
-            </Text>
-            <Text
-              px="68px"
-              fontSize="28px"
-              fontWeight="400"
-              lineHeight="33px"
-              pt="10px"
-              textAlign="center"
-              alignContent="center"
-            >
-              fastx’s mission is to provide convenient, reliable delivery
-              services to users, while empowering delivery partners with
-              flexible and rewarding opportunities.
-            </Text>
-          </Box>
+        </Box>
+
+        <Flex
+          flexDir="column"
+          alignItems={{ sm: "", xl: "flex-end" }}
+          maxW="612px"
+        >
+          <Text
+            color="#009D52"
+            fontWeight="700"
+            textAlign={{ sm: "center", xl: "right" }}
+            fontSize={{ sm: "24px", xl: "64px" }}
+            textDecoration="underline"
+          >
+            Our Mission
+          </Text>
+          <Text
+            fontWeight="400"
+            fontSize={{ sm: "16px", xl: "22px" }}
+            lineHeight="26px"
+            textAlign="justify"
+            maxW="737px"
+          >
+            fastx’s mission is to provide convenient, reliable delivery services
+            to users, while empowering delivery partners with flexible and
+            rewarding opportunities.
+          </Text>
         </Flex>
       </Box>
+
       <Box bg="#FF6B00" py="50px" mt="67px">
         <Text
           color="#FFF"
           fontWeight="700"
-          textAlign="center"
-          fontSize="64px"
+          textAlign={{ sm: "left", xl: "center" }}
+          fontSize={{ sm: "24px", xl: "64px" }}
           textDecoration="underline"
         >
           Testimonies
         </Text>
-        <Grid
+        <Box
+          display={{ sm: "block", xl: "grid" }}
           gridTemplateColumns="repeat(3, 1fr)"
           mt="100px"
           gridGap="20px"
@@ -184,7 +216,7 @@ const About = () => {
           {testimonies.map((testimony, index) => (
             <GridItem
               key={index}
-              w="456px"
+              maxW="456px"
               h="503px"
               bg="#FFF"
               borderRadius="8px"
@@ -192,7 +224,14 @@ const About = () => {
               p="50px 11px"
               textAlign="center"
             >
-              <Text fontSize="24px" fontWeight="400" mb="20px">
+              <Text
+                fontSize={{
+                  sm: "12px",
+                  xl: "24px",
+                }}
+                fontWeight="400"
+                mb="20px"
+              >
                 {testimony.heading}
               </Text>
               <Text
@@ -207,8 +246,9 @@ const About = () => {
               </Text>
             </GridItem>
           ))}
-        </Grid>
+        </Box>
       </Box>
+      <Image src={choose} objectFit="cover" />
       <Footer />
     </>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./PasswordResetSuccess.css";
 const PasswordResetSuccess = ({
@@ -8,6 +8,7 @@ const PasswordResetSuccess = ({
   isSendVerification,
 }) => {
   const navigate = useNavigate();
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   const handleButtonClick = async (
     firstName,
     surName,
@@ -54,6 +55,7 @@ const PasswordResetSuccess = ({
       // Navigate to the login page
       navigate("/Login");
     }
+    setIsButtonDisabled(true);
   };
   return (
     <section className="password_reset_success">
@@ -68,7 +70,7 @@ const PasswordResetSuccess = ({
           onClick={handleButtonClick}
           className="password_reset_success_btn"
         >
-          {button}
+          {isButtonDisabled ? "Button Disabled" : button}
         </button>
       </div>
     </section>
