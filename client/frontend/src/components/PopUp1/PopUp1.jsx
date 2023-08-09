@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import PopUp2 from '../PopUp2/PopUp2';
+import PopUp2 from './PopUp2/PopUp2';
 
 import './PopUp1.css'
 
