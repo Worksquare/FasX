@@ -1,7 +1,7 @@
 import React from "react";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom;
+
 import {
   BrowserRouter as Router,
   Route,
@@ -52,14 +52,6 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
 
-   
-
-
-      {/* <div className="App"> */}
-      {/* <OrderPickUp /> */}
-
-      {/* <header className="App-header"> */}
-
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -94,19 +86,9 @@ function App() {
 
         </Routes>
       </Router>
-   
-
-          <Route path="/Orderpickup" element={<OrderPickup />} />
-          <Route path="/verify_email" element={<VerificationSuccess />} />
-          <Route path="/verification_email" element={<VerificationError />} />
-
-          <Route
-            path="/dashboard"
-            element={user ? <Dashboard /> : <Navigate to="/Login" />}
-          />
-        </Routes>
-      </Router>
-   
+ 
+       
+      
     </ChakraProvider>
   );
 }
