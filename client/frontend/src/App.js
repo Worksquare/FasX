@@ -1,6 +1,14 @@
 import React from "react";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom;
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+
 import Home from "./pages/home";
 import About from "./pages/about";
 import Blog from "./pages/blog";
@@ -19,10 +27,15 @@ import { useAuthContext } from "./hooks/useAuthContext";
 
 
 
+
 import VerifyEmail from "./components/verification/verifyEmail";
 
 import Dashboard from "./components/layout/Dashboard";
 import Sidebar from "./components/molecules/Sidebar";
+
+// import Sidebar from "./components/molecules/Sidebar";
+import Dashboard from "./components/layout/Dashboard";
+
 
 
 const breakpoints = {
@@ -42,12 +55,19 @@ function App() {
 
    
 
+
+      {/* <div className="App"> */}
+      {/* <OrderPickUp /> */}
+
+      {/* <header className="App-header"> */}
+
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contactUs" element={<ContactUs />} />
           <Route path="/blog" element={<Blog />} />
+
           <Route path="/Login" element={<Login />} />
           <Route path="/Signup" element={<UserSignup />} />
           <Route path="/verifyEmail" element={<VerifyEmail />} />
@@ -55,6 +75,8 @@ function App() {
           <Route path="/Orderpickup" element={<OrderPickup />} />
           <Route path="/verify_email" element={<VerificationSuccess />} />
           <Route path="/verification_email" element={<VerificationError />} />
+
+
 
           <Route
             path="/Login"
@@ -71,6 +93,18 @@ function App() {
             element={user ? <Sidebar /> : <Navigate to="/Login" />}
           />
 
+        </Routes>
+      </Router>
+   
+
+          <Route path="/Orderpickup" element={<OrderPickup />} />
+          <Route path="/verify_email" element={<VerificationSuccess />} />
+          <Route path="/verification_email" element={<VerificationError />} />
+
+          <Route
+            path="/dashboard"
+            element={user ? <Dashboard /> : <Navigate to="/Login" />}
+          />
         </Routes>
       </Router>
    
