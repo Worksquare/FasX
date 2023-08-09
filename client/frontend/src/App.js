@@ -15,11 +15,11 @@ import Blog from "./pages/blog";
 import ContactUs from "./pages/contactUs";
 import Login from "./pages/Login/Login";
 import UserSignup from "./pages/user signup/UserSignup";
-// import OrderPickUp from "./pages/OrderPickUp/OrderPickUp";
+
 
 import "./App.css";
 
-// import DashboardLayout from "./components/layout/DashboardLayout";
+
 import OrderPickup from "./components/layout/OrderPickup";
 import VerificationSuccess from "./components/verification/verificationSuccess";
 import VerificationError from "./components/verification/verificationError";
@@ -32,8 +32,7 @@ import VerifyEmail from "./components/verification/verifyEmail";
 
 import Sidebar from "./components/molecules/Sidebar";
 
-// import Sidebar from "./components/molecules/Sidebar";
-import Dashboard from "./components/layout/Dashboard";
+
 
 
 
