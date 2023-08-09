@@ -71,7 +71,7 @@ const Rider = () => {
           </span>{" "}
           today
         </Heading>
-        <Link href="/signup" _hover={{textDecoration:"none"}}>
+        <Link href="/RiderSignUp" _hover={{textDecoration:"none"}}>
           <Text
            fontWeight="400"
            fontSize={{

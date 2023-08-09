@@ -17,6 +17,7 @@ import VerificationSuccess from "./components/verification/verificationSuccess";
 import VerificationError from "./components/verification/verificationError";
 import { useAuthContext } from "./hooks/useAuthContext";
 import Sidebar from "./components/molecules/Sidebar";
+import RiderSignUp from "./components/RiderSignUp/RiderSignUp";
 
 const breakpoints = {
   sm: "320px",
@@ -44,6 +45,7 @@ function App() {
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/Login" element={<Login />} />
                 <Route path="/Signup" element={<UserSignup />} />
+                <Route path="/RiderSignUp" element={<RiderSignUp />} />
 
                 <Route path="/Orderpickup" element={<OrderPickup />} />
                 <Route path="/verify_email" element={<VerificationSuccess />} />

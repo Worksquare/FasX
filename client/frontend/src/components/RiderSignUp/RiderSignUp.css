@@ -1,7 +1,5 @@
 section{
   background-color: #F8F8F8;
-  margin: 5px;
-
 }
 
 /* navigation of the page */
@@ -16,8 +14,9 @@ section{
    display: flex;
    color: #000;
    font-family: Inter;
-   font-size: 64px;
+   font-size: 44px;
    font-weight: 800;
+   margin-bottom: -22px;
 }
  .gradient{
    background: linear-gradient(90deg, #FF6B00 0%, #F00 100%);
@@ -25,18 +24,18 @@ section{
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
    font-family: Inter;
-   font-size: 64px;
+   font-size:  44px;
    font-weight: 900;
 }
 
 .signup-nav__btn button{
-   width: 116px;
-   height: 40px;
-   border-radius: 11.359px;
+   width: 106px;
+   height: 30px;
+   border-radius: 10px;
    background: linear-gradient(90deg, #FF8E3D 0%, #F00 100%);
    border: none;
    color: #fff;
-   font-size: 23px;
+   font-size: 13px;
    font-weight: 500;
    cursor: pointer;
 }
@@ -142,8 +141,7 @@ form .form__button{
    }
 
    .form__wrapper input{
-      width: 340px;
-      
+      min-width: 100%;   
    }
    
  

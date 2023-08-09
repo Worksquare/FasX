@@ -2,24 +2,43 @@ import React from 'react'
 import './RiderSignUp.css'
 import Facebook from "../../images/facebook.png";
 import Google from "../../images/google.png";
+import { useState } from 'react';
 
 const RiderSignUp = () => {
-      // const [number, setNumber] = useState("");
-  const [email, setEmail] = useState("");
-  const [address, setAddress] = useState("");
-  const [city, setCity] = useState("");
-  const [password, setPassword] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [surName, setSurName] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
-  const { signup, error, isLoading } = useSignup();
+     
+    const [riderData, setRiderData] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        address: '',
+        city: '',
+        phoneNumber: '',
+        password: '',
+        confirmPassword: '',
+      });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+        await fetch('API_ENDPOINT_URL', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(riderData),
+        });
+  
+       
+    };
 
-    await signup(firstName, surName, phoneNumber, address, city,  email, password);
-  };
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setRiderData((prevData) => ({
+          ...prevData,
+          [name]: value,
+        }));
+      };
+
+    // await signup(firstName, surName, phoneNumber, address, city,  email, password)
   return (
     <section className='signup'>
         <div className="signup-nav">
@@ -63,18 +82,50 @@ const RiderSignUp = () => {
 
             <div className="form__wrapper">
                 <div className="wrap">
-                <input type="text" placeholder='First Name'/>
-                <input type="text" placeholder='Last Name'/>
+                <input type="text" placeholder='First Name'
+                 onChange={handleChange}
+                 name='firstName'
+                 value={riderData.firstName}
+                 />
+                <input type="text" placeholder='Last Name'
+                 onChange={handleChange}
+                 name='lastName'
+                 value={riderData.lastName}
+                />
                 </div>
-                <input type='email' placeholder='Email'/>
+                <input type='email' placeholder='Email'
+                  onChange={handleChange}
+                  name='email'
+                  value={riderData.email}    
+                />
                 <div className="wrap">
-                    <input type="text" placeholder='Address' />
-                    <input type="text" placeholder='City' />
+                    <input type="text" placeholder='Address' 
+                        onChange={handleChange}
+                        name='address'
+                        value={riderData.address}
+                    />
+                    <input type="text" placeholder='City'
+                        onChange={handleChange}
+                        name='city'
+                        value={riderData.city}/>
                 </div>
                 
-                <input type="tel" placeholder='Phone Number' className='form__span'/>
-                <input type="password" placeholder="Password" className='form__span' required />
-                <input type="password" placeholder="Confirm Password" className='form__span' required />
+                <input type="tel" placeholder='Phone Number' className='form__span'
+                    onChange={handleChange}
+                    name='phoneNumber'
+                    value={riderData.phoneNumber}
+                />
+                <input type="password" placeholder="Password" className='form__span' required
+                  onChange={handleChange}
+                  name='password'
+                  value={riderData.password}  
+    
+                />
+                <input type="password" placeholder="Confirm Password" className='form__span' required
+                    onChange={handleChange}
+                    name='confirmPassword'
+                    value={riderData.confirmPassword}
+                />
                 <input type="button" value="CONTINUE" className='form__button' />
             </div>
         </form>
