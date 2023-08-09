@@ -56,7 +56,14 @@ function App() {
           <Route path="/verify_email" element={<VerificationSuccess />} />
           <Route path="/verification_email" element={<VerificationError />} />
 
-
+          <Route
+            path="/Login"
+            element={!user ? <Login /> : <Navigate to="/dashboard" />}
+          />
+          <Route
+            path="/Signup"
+            element={!user ? <UserSignup /> : <Navigate to="/dashboard" />}
+          />
           <Route path="/dashboard" element={user ? <Sidebar /> : <Login />} />
 
           <Route
