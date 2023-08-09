@@ -21,6 +21,7 @@ const Navbar = () => {
     },
    
   ];
+ 
   const mobileNav = [
     {
       title: "Home",
@@ -39,10 +40,9 @@ const Navbar = () => {
       href: "/Login",
     },
     {
-      title: "Sign Up",
+      title: "Signup",
       href: "/signup",
     },
-   
   ];
 
   const logo = "../images/logo.png";
@@ -110,7 +110,7 @@ const Navbar = () => {
             zIndex="4"
             bg="white"
             w="100vw"
-            h="100vh"
+            h= "100vh"
             left="0"
             top="60px"
             overflow="hidden"
@@ -134,6 +134,8 @@ const Navbar = () => {
                   fontFamily="Inter"
                   fontWeight="800"
                   fontSize="24px"
+                  mt="20px"
+                 
                 >
                   {navlink.title}
                 </Link>
