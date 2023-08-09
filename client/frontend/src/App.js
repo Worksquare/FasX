@@ -21,7 +21,6 @@ import { useAuthContext } from "./hooks/useAuthContext";
 
 import VerifyEmail from "./components/verification/verifyEmail";
 
-import Dashboard from "./components/layout/Dashboard";
 import Sidebar from "./components/molecules/Sidebar";
 
 
@@ -64,7 +63,7 @@ function App() {
             path="/Signup"
             element={!user ? <UserSignup /> : <Navigate to="/dashboard" />}
           />
-          <Route path="/dashboard" element={user ? <Sidebar /> : <Login />} />
+         
 
           <Route
             path="/dashboard"
