@@ -15,6 +15,8 @@ const Login = () => {
     e.preventDefault();
 
     await login(number, password);
+    setNumber("");
+    setPassword("");
   };
   return (
     <section className="login">
