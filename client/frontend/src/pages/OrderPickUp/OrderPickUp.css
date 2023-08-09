@@ -1,18 +1,39 @@
 section .pickup{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
     gap: 5rem;
-    margin: 1rem;
-    padding: 1rem;
 }
-header{
-    margin: 5px 0;
-}
+
+ 
 
 main{
    padding: 9px;
+   margin: 5px auto;
+   position: relative;
+
 }
+
+header{
+    display: flex;
+    gap: 3px;
+    position: absolute;
+    cursor: pointer;
+    right: 0px;
+    justify-content: center;
+}
+.heading{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+header .btn-text{
+    font-size: 20px;
+    font-weight: 700;
+    color: #F00;
+}
+.icon{
+    display: flex;
+}
+
 
 .pickup-details h3,
 .Dropoff-details h3,
@@ -94,5 +115,38 @@ main .span{
     max-width: 280px;
 }
 
+.hamburger{
+   margin: 8px 16px;
+   display: none;
+}
+
+.container{
+    position: relative;
+    /* display: inline-block; */
+}
+.code{
+    margin:15px 0;
+    background: #EEE;
+    width: 100%;
+}
 
 
+.card{
+    padding: 5px 10px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    border-radius: 5px;
+}
+
+
+
+@media (max-width: 820px) {
+    .hamburger{
+        display: block;
+     }
+
+     
+  }
