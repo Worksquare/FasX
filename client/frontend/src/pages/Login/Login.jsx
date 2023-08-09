@@ -14,7 +14,12 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+
     await login(email, password);
+;
+    setEmail("");
+    setPassword("");
+
   };
   return (
     <section className="login">
