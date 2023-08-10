@@ -1,6 +1,6 @@
 import React from "react";
+import { useAuthContext } from "./hooks/useAuthContext";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
-
 
 import {
   BrowserRouter as Router,
@@ -16,25 +16,10 @@ import ContactUs from "./pages/contactUs";
 import Login from "./pages/Login/Login";
 import UserSignup from "./pages/user signup/UserSignup";
 
-
 import "./App.css";
 
-
 import OrderPickup from "./components/layout/OrderPickup";
-import VerificationSuccess from "./components/verification/verificationSuccess";
-import VerificationError from "./components/verification/verificationError";
-import { useAuthContext } from "./hooks/useAuthContext";
-
-
-
-
-import VerifyEmail from "./components/verification/verifyEmail";
-
 import Sidebar from "./components/molecules/Sidebar";
-
-
-
-
 
 const breakpoints = {
   sm: "320px",
@@ -50,23 +35,16 @@ function App() {
   console.log(user);
   return (
     <ChakraProvider theme={theme}>
-
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contactUs" element={<ContactUs />} />
           <Route path="/blog" element={<Blog />} />
-
-          <Route path="/Login" element={<Login />} />
-          <Route path="/Signup" element={<UserSignup />} />
-          <Route path="/verifyEmail" element={<VerifyEmail />} />
-
-          <Route path="/Orderpickup" element={<OrderPickup />} />
-          <Route path="/verify_email" element={<VerificationSuccess />} />
-          <Route path="/verification_email" element={<VerificationError />} />
-
-
+          <Route
+            path="/Orderpickup"
+            element={!user ? <OrderPickup /> : <Navigate to="/dashboard" />}
+          />
 
           <Route
             path="/Login"
@@ -76,18 +54,13 @@ function App() {
             path="/Signup"
             element={!user ? <UserSignup /> : <Navigate to="/dashboard" />}
           />
-         
 
           <Route
             path="/dashboard"
             element={user ? <Sidebar /> : <Navigate to="/Login" />}
           />
-
         </Routes>
       </Router>
- 
-       
-      
     </ChakraProvider>
   );
 }
