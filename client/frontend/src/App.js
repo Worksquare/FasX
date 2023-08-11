@@ -20,6 +20,7 @@ import "./App.css";
 
 import OrderPickup from "./components/layout/OrderPickup";
 import Sidebar from "./components/molecules/Sidebar";
+import Footer from "./components/molecules/Footer";
 
 const breakpoints = {
   sm: "320px",
@@ -41,6 +42,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contactUs" element={<ContactUs />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/footer" element={<Footer />} />
+
           <Route
             path="/Orderpickup"
             element={!user ? <OrderPickup /> : <Navigate to="/dashboard" />}

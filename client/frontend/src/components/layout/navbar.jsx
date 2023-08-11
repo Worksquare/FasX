@@ -17,7 +17,7 @@ const Navbar = () => {
     },
     {
       title: "Contact Us",
-      href: "/contact",
+      href: "/footer",
     },
    
   ];
@@ -33,7 +33,7 @@ const Navbar = () => {
     },
     {
       title: "Contact Us",
-      href: "/contact",
+      href: "/footer"
     },
     {
       title: "Login",
