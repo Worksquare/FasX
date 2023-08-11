@@ -15,10 +15,7 @@ const Navbar = () => {
       title: "About",
       href: "/about",
     },
-    {
-      title: "Contact Us",
-      href: "/footer",
-    },
+    
    
   ];
  
@@ -31,10 +28,7 @@ const Navbar = () => {
       title: "About",
       href: "/about",
     },
-    {
-      title: "Contact Us",
-      href: "/footer"
-    },
+  
     {
       title: "Login",
       href: "/Login",
