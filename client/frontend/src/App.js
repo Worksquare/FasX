@@ -12,7 +12,7 @@ import {
 import Home from "./pages/home";
 import About from "./pages/about";
 import Blog from "./pages/blog";
-import ContactUs from "./pages/contactUs";
+
 import Login from "./pages/Login/Login";
 import UserSignup from "./pages/user signup/UserSignup";
 
@@ -20,7 +20,7 @@ import "./App.css";
 
 import OrderPickup from "./components/layout/OrderPickup";
 import Sidebar from "./components/molecules/Sidebar";
-import Footer from "./components/molecules/Footer";
+
 
 const breakpoints = {
   sm: "320px",
