@@ -1,8 +1,9 @@
-import { Box, Flex, GridItem, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, GridItem, Text } from "@chakra-ui/react";
 import React from "react";
 import Navbar from "../components/layout/navbar";
 import Description from "../components/molecules/Description";
 import Footer from "../components/molecules/Footer";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import about from "../images/about"
 const About = () => {
   const riderAbout = "../images/riderImage.png";
@@ -23,7 +24,25 @@ const About = () => {
       text: "-Kabiru",
     },
   ];
-
+  // const aboutSlides = [
+  //   {
+  //     img: "/images/12.png",
+  //     text: "FastX is fast, convenient, and easy to use. I can choose from different delivery partners, track my order, and communicate with the delivery partner.  FastX has helped me save time and money, and grow my business.",
+  //     name: "Alice Oluwaseun Adeyemi",
+  //     occupation: "Graphic designer",
+  //   },
+  //   {
+  //     img: "/images/46.png",
+  //     text: "FastX helps me find the best delivery partner, verify the order details, and confirm the delivery completion. FastX has helped me increase customer satisfaction and loyalty, and reach new markets.",
+  //     occupation: "Entrepreneur/Online store owner",
+  //   },
+  //   {
+  //     img: "/images/12.png",
+  //     text: "FastX is fast, convenient, and easy to use. I can choose from different delivery partners, track my order, and communicate with the delivery partner.  FastX has helped me save time and money, and grow my business.",
+  //     name: "Alice Oluwaseun Adeyemi",
+  //     occupation: "Graphic designer",
+  //   },
+  // ];
   const about = "/images/about_bg.png";
   const choose = "/images/choose.png";
   return (
@@ -248,6 +267,9 @@ const About = () => {
           ))}
         </Box>
       </Box>
+
+     
+
       <Image src={choose} objectFit="cover" />
       <Footer />
     </>
