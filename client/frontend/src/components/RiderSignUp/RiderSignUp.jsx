@@ -3,8 +3,15 @@ import './RiderSignUp.css'
 import Facebook from "../../images/facebook.png";
 import Google from "../../images/google.png";
 import { useState } from 'react';
+import RiderSignUp2 from '../RiderSignUp2/RiderSignUp2'
 
 const RiderSignUp = () => {
+
+    const [showRiderSignUp2, setShowRiderSignUp2] = useState(false);
+
+    const handleContinue = () => {
+      setShowRiderSignUp2(true);
+    };
      
     const [riderData, setRiderData] = useState({
         firstName: '',
@@ -126,12 +133,14 @@ const RiderSignUp = () => {
                     name='confirmPassword'
                     value={riderData.confirmPassword}
                 />
-                <input type="button" value="CONTINUE" className='form__button' />
+                <input type="button" value="CONTINUE" className='form__button' onClick={handleContinue} />
             </div>
         </form>
 
 
     </div>
+
+    {showRiderSignUp2 && <RiderSignUp2 />}
 
     </section>
   )
