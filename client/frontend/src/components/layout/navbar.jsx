@@ -15,13 +15,27 @@ const Navbar = () => {
       title: "About",
       href: "/about",
     },
+    
+   
+  ];
+ 
+  const mobileNav = [
     {
-      title: "Contact Us",
-      href: "/contact",
+      title: "Home",
+      href: "/",
     },
     {
-      title: "Blog",
-      href: "/blog",
+      title: "About",
+      href: "/about",
+    },
+  
+    {
+      title: "Login",
+      href: "/Login",
+    },
+    {
+      title: "Signup",
+      href: "/signup",
     },
   ];
 
@@ -73,6 +87,7 @@ const Navbar = () => {
             xl: "none",
           }}
           onClick={handleMenuDisplay}
+          
         >
           {showMenu ? (
             <MdCancelPresentation size={40} />
@@ -89,7 +104,7 @@ const Navbar = () => {
             zIndex="4"
             bg="white"
             w="100vw"
-            h="100vh"
+            h= "100vh"
             left="0"
             top="60px"
             overflow="hidden"
@@ -98,7 +113,7 @@ const Navbar = () => {
               xl: "none",
             }}
           >
-            {navlinks.map((navlink, index) => {
+            {mobileNav.map((navlink, index) => {
               return (
                 <Link
                   key={index}
@@ -113,6 +128,8 @@ const Navbar = () => {
                   fontFamily="Inter"
                   fontWeight="800"
                   fontSize="24px"
+                  mt="20px"
+                 
                 >
                   {navlink.title}
                 </Link>

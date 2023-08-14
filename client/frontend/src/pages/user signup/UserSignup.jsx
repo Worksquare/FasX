@@ -13,7 +13,7 @@ const UserSignup = () => {
   const [city, setCity] = useState("");
   const [password, setPassword] = useState("");
   const [firstName, setFirstName] = useState("");
-  const [surName, setSurName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const { signup, error, isLoading } = useSignup();
@@ -21,7 +21,15 @@ const UserSignup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await signup(firstName, surName, phoneNumber, address, city,  email, password);
+    await signup(
+      firstName,
+      lastName,
+      phoneNumber,
+      address,
+      city,
+      email,
+      password
+    );
   };
   return (
     <section className="user_signup">
@@ -44,9 +52,9 @@ const UserSignup = () => {
 
           <input
             type="text"
-            placeholder="surn name"
-            onChange={(e) => setSurName(e.target.value)}
-            value={surName}
+            placeholder="Last name"
+            onChange={(e) => setLastName(e.target.value)}
+            value={lastName}
           />
         </div>
         <input

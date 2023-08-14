@@ -7,14 +7,15 @@ import Facebook from "../../images/facebook.png";
 import Google from "../../images/google.png";
 
 const Login = () => {
-  const [number, setNumber] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { login, error, isLoading } = useLogin();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    await login(number, password);
+    await login(email, password);
+    setEmail("");
+    setPassword("");
   };
   return (
     <section className="login">
@@ -25,8 +26,8 @@ const Login = () => {
           <input
             type="text"
             placeholder="Phnone Number"
-            onChange={(e) => setNumber(e.target.value)}
-            value={number}
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
           />
           <input
             type="password"
