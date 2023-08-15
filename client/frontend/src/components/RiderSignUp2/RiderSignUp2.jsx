@@ -4,7 +4,7 @@ import icon from '../../images/Icon.png'
 
 
 
-const RiderSignUp2 = () => {
+const RiderSignUp2 = ({ riderData }) => {
   return (
     <section className='signup'>
          <div className="signup-nav">

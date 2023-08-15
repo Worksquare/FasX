@@ -3,14 +3,18 @@ import './RiderSignUp.css'
 import Facebook from "../../images/facebook.png";
 import Google from "../../images/google.png";
 import { useState } from 'react';
-import RiderSignUp2 from '../RiderSignUp2/RiderSignUp2'
+import {useNavigate} from 'react-router-dom';
+
+// import RiderSignUp2 from '../RiderSignUp2/RiderSignUp2'
 
 const RiderSignUp = () => {
 
-    const [showRiderSignUp2, setShowRiderSignUp2] = useState(false);
-
+    // const [showRiderSignUp2, setShowRiderSignUp2] = useState(false);
+    
+    const navigate = useNavigate();
     const handleContinue = () => {
-      setShowRiderSignUp2(true);
+      navigate('/RiderSignUp2',{state: { riderData: riderData }});
+      
     };
      
     const [riderData, setRiderData] = useState({
@@ -26,7 +30,7 @@ const RiderSignUp = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-        await fetch('API_ENDPOINT_URL', {
+        await fetch('https://fastx-logistic-api.onrender.com/v1/auth/register', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -47,6 +51,7 @@ const RiderSignUp = () => {
 
     // await signup(firstName, surName, phoneNumber, address, city,  email, password)
   return (
+
     <section className='signup'>
         <div className="signup-nav">
             <div className="signup-nav__logo">
@@ -140,11 +145,14 @@ const RiderSignUp = () => {
 
     </div>
 
-    {showRiderSignUp2 && <RiderSignUp2 />}
+
 
     </section>
+
+      // <RiderSignUp2 riderData={riderData} />
+    
   )
-}
+};
 
 export default RiderSignUp
 

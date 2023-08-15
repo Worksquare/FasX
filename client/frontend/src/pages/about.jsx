@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "../components/layout/navbar";
 import Description from "../components/molecules/Description";
 import Footer from "../components/molecules/Footer";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import about from "../images/about"
 const About = () => {
   const riderAbout = "../images/riderImage.png";

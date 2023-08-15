@@ -21,6 +21,7 @@ import "./App.css";
 import OrderPickup from "./components/layout/OrderPickup";
 import Sidebar from "./components/molecules/Sidebar";
 import RiderSignUp from "./components/RiderSignUp/RiderSignUp";
+import RiderSignUp2 from "./components/RiderSignUp2/RiderSignUp2";
 
 
 const breakpoints = {
@@ -43,11 +44,15 @@ function App() {
           <Route path="/about" element={<About />} />
         
           <Route path="/blog" element={<Blog />} />
-         
+          <Route path="/RiderSignUp" element={<RiderSignUp />} />
+          <Route path="/RiderSignUp2" element={<RiderSignUp2/>}  />
+
+
           <Route
             path="/Orderpickup"
             element={!user ? <OrderPickup /> : <Navigate to="/dashboard" />}
           />
+
 
           <Route
             path="/Login"
