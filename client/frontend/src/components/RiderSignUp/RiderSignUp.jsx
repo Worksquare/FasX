@@ -9,13 +9,9 @@ import {useNavigate} from 'react-router-dom';
 
 const RiderSignUp = () => {
 
-    // const [showRiderSignUp2, setShowRiderSignUp2] = useState(false);
+   
     
     const navigate = useNavigate();
-    const handleContinue = () => {
-      navigate('/RiderSignUp2',{state: { riderData: riderData }});
-      
-    };
      
     const [riderData, setRiderData] = useState({
         firstName: '',
@@ -28,9 +24,12 @@ const RiderSignUp = () => {
         confirmPassword: '',
       });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-        await fetch('https://fastx-logistic-api.onrender.com/v1/auth/register', {
+
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+  
+      try {
+        const response = await fetch('https://fastx-logistic-api.onrender.com/v1/auth/register', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -38,8 +37,27 @@ const RiderSignUp = () => {
           body: JSON.stringify(riderData),
         });
   
-       
-    };
+        if (response.ok) {
+          const responseData = await response.json();
+          // Assuming responseData contains the user and tokens data
+          console.log(responseData)
+          const {  tokens } = responseData;
+          // Store tokens in localStorage or state for further use
+        localStorage.setItem('access_token', tokens.access.token);
+        localStorage.setItem('refresh_token', tokens.refresh.token);
+
+        // Redirect to RiderSignUp2 with riderData and handleChange function
+        navigate('/RiderSignUp2', { state: { riderData } });
+      } else {
+        // Handle error response here
+        console.error('Registration failed:', response.statusText);
+      }
+    } catch (error) {
+      // Handle fetch or other errors here
+      console.error('Error during registration:', error);
+    }
+  };
+
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -47,6 +65,12 @@ const RiderSignUp = () => {
           ...prevData,
           [name]: value,
         }));
+      };
+
+
+      const handleContinue = () => {
+        navigate('/RiderSignUp2',{state: { riderData: riderData }});
+        
       };
 
     // await signup(firstName, surName, phoneNumber, address, city,  email, password)
