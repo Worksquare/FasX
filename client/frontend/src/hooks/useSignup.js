@@ -6,11 +6,13 @@ export const useSignup = () => {
   const [isLoading, setIsLoading] = useState(null);
   const { dispatch } = useAuthContext();
 
+
+  
   const signup = async (
     firstName,
     lastName,
-    phoneNumber,
-    address,
+    phoneNumber,  
+    address,     
     city,
     email,
     password
@@ -18,6 +20,8 @@ export const useSignup = () => {
     setIsLoading(true);
     setError(null);
 
+
+    
     const response = await fetch(
       "https://fastx-logistic-api.onrender.com/v1/auth/register",
       {
