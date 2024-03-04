@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./PasswordResetSuccess.css";
 const PasswordResetSuccess = ({
-  Icon,
+  Icon,    
   message,
   button,
   isSendVerification,
@@ -64,13 +64,13 @@ const PasswordResetSuccess = ({
           {/* <IoIosCheckmarkCircle className="image_main" /> */}
           <span> {Icon}</span>
         </div>
-
+    
         <span>{message}</span>
         <button
           onClick={handleButtonClick}
           className="password_reset_success_btn"
         >
-          {isButtonDisabled ? "Button Disabled" : button}
+          {isButtonDisabled ? "Button Disabled" : button}  
         </button>
       </div>
     </section>
