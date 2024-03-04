@@ -7,10 +7,10 @@ const VerificationSuccess = () => {
   return (
     <Box>
       <PasswordResetSuccess
-        Icon={<IoIosCheckmarkCircle size={260} color="#00e075"/>}
+        Icon={<IoIosCheckmarkCircle size={260} color="#00e075"/>}   
         message={"Your Email has been verified"}
         button={"Continue"}
-        isSendVerification={false}
+        isSendVerification={false}    
       />
     </Box>
   );

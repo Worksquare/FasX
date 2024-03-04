@@ -25,10 +25,10 @@ const Blog = () => {
               _hover={{
                 transform: "scale(1.1)",
                 transition: "all ease-in 0.5s",
-              }}
+              }}      
             />
           );
-        })}
+        })}    
       </Box>
     </Box>
   );

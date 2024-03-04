@@ -6,9 +6,9 @@ const VerificationError = () => {
   return (
     <Box>
     <PasswordResetSuccess
-      Icon={<IoIosCheckmarkCircle size={260} color="#F52538 "/>}
-      message={"Your Email has not verified"}
-      button={"Send Email Again"}
+      Icon={<IoIosCheckmarkCircle size={260} color="#F52538 "/>}  
+      message={"Your Email has not verified"}  
+      button={"Send Email Again"}  
       isSendVerification={true}
     />
   </Box>
