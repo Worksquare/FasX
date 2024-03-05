@@ -16,6 +16,9 @@ export const useOtp = () => {
         Authorization: `${setUserToken} https://fastx-logistic-api.onrender.com/v1/auth/send-verification-email`,
       };
 
+
+
+
       const response = await fetch(apiUrl, {
         method: "POST",
         headers: headers,
@@ -28,6 +31,8 @@ export const useOtp = () => {
         setError(json.error);
         console.log("OTP verification failed");
       }
+
+
 
       if (response.ok) {
         // save the user to local storage
@@ -45,4 +50,4 @@ export const useOtp = () => {
     }
   };
   return { otp, isLoading, error };
-};
+};     
