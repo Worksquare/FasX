@@ -8,7 +8,10 @@ export const useLogin = () => {
 
   const login = async (email, password) => {
     setIsLoading(true);
-    setError(null);
+   
+
+
+    
 
     const response = await fetch(
       "https://fastx-logistic-api.onrender.com/v1/auth/login",
