@@ -26,7 +26,7 @@ const RiderSignUp = () => {
 
 
     const handleSubmit = async (e) => {
-      e.preventDefault();
+      e.preventDefault();   
   
       try {
         const response = await fetch('https://fastx-logistic-api.onrender.com/v1/auth/register', {
@@ -53,8 +53,8 @@ const RiderSignUp = () => {
         console.error('Registration failed:', response.statusText);
       }
     } catch (error) {
-      // Handle fetch or other errors here
-      console.error('Error during registration:', error);
+      // Handle fetch or other errors here 
+      console.error('Error during registration:', error);  
     }
   };
 
@@ -83,7 +83,7 @@ const RiderSignUp = () => {
                     Fast
                         <span className="gradient"> X </span>
                     </span>
-                    <span className='signup-nav__logo--text'>
+                    <span className='signup-nav__logo--text'>  
                     Choose Fast. Track Faster. Deliver on time.
                     </span>
             </div>
@@ -102,7 +102,7 @@ const RiderSignUp = () => {
         </div>
         <div className="social">
             <span className="social__text">
-            Continue with
+            Continue with  
             </span>
   
                 <a href="/" className='social__icon'  >
@@ -180,7 +180,7 @@ const RiderSignUp = () => {
 
 export default RiderSignUp
 
-
+    
 
 // "user": {
 //     "firstName": "isaiah",
