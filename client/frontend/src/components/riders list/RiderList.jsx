@@ -3,13 +3,13 @@ import React from "react";
 import "./RiderList.css";
 import Ridera from "../../images/ridera.png";
 
-const RiderList = () => {
+const RiderList = () => {   
   return (
     <div className="cont">
       <span>Riders Available</span>
       <div className="rider_list">
-        <div className="rider_list_img">
-          <img src={Ridera} alt="first logo" />
+        <div className="rider_list_img">   
+          <img src={Ridera} alt="first logo" />  
           <div className="name">
             <h4>
               Jerry Bale <span className="n_rides">439 rides</span>

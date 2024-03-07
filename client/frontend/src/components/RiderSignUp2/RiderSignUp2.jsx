@@ -4,12 +4,12 @@ import icon from '../../images/Icon.png'
 import { useState } from 'react'
 import {useNavigate} from 'react-router-dom';
 
+     
 
-
-
+    
 
 const RiderSignUp2 = ({ riderData }) => {
-
+  
   const navigate = useNavigate();
 
     const [vehicleData, setVehicleData] = useState({
@@ -17,14 +17,14 @@ const RiderSignUp2 = ({ riderData }) => {
         color: '',
         model: '',
         chassisNumber: '',
-        plateNumber: '',
+        plateNumber: '',   
         ownedSince: '',
         vehicleDocuments: null,
       });
 
       const handleFileChange = (e) => {
         setVehicleData({ ...vehicleData, vehicleDocuments: e.target.files[0] });
-      };
+      };   
 
       const handleChange = (e) => {
         const { name, value } = e.target;
