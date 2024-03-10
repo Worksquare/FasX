@@ -21,15 +21,15 @@ const Dashboard = () => {
   ];
 
   return (
-    <Flex justifyContent="space-between" p="40px" gap="84px">
-      <Box w="750px">
+    <Flex justifyContent="space-between" p="40px" gap="84px">    
+      <Box w="750px">    
         <Flex gap={53}>
           <Box fontWeight={700} fontFamily="Inter" color="#101010">
             <Flex fontSize={24} gap={2}>
-              <Text fontWeight={500}>Welcome, </Text>
-              <Text>Jerry</Text>
+              <Text fontWeight={500}>Welcome, </Text>    
+              <Text>Jerry</Text>    
             </Flex>
-
+   
             <Text fontSize={40}>Let's take your order for today</Text>
           </Box>
 

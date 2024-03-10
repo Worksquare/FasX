@@ -6,7 +6,7 @@ const OrderPickup = () => {
   return (
     <Box
       bg="#F8F8F8"
-      alignItems="center"
+      alignItems="center"       
       justifyContent="space-between"
       p="35px 120px"
     >
