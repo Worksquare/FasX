@@ -7,10 +7,10 @@ import { useLocation } from "react-router-dom";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const navlinks = [
-    {
+    {      
       title: "Home",
       href: "/",
-    },
+    },   
     {
       title: "About",
       href: "/about",
