@@ -12,7 +12,7 @@ const OrderPickup = () => {
     >
       <RiderList />
     </Box>
-  );
+  );    
 };
 
 export default OrderPickup;

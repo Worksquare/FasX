@@ -7,7 +7,7 @@ import { Button } from "@chakra-ui/react";
 
 const mobileNav = () => {
   const [dropDown, setDropDown] = useState(false);
-  const logo = "../images/logo.png";    
+  const logo = "../images/logo.png";        
   const router = useRouter();
 
   const mobileData = [
