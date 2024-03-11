@@ -27,7 +27,7 @@ const Blog = () => {
                 transition: "all ease-in 0.5s",
               }}      
             />
-          );
+          );       
         })}    
       </Box>
     </Box>

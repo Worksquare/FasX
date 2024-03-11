@@ -9,7 +9,7 @@ const Navbar = () => {
   const navlinks = [
     {      
       title: "Home",
-      href: "/",
+      href: "/",    
     },   
     {
       title: "About",
