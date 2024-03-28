@@ -6,13 +6,13 @@ import { MdCancelPresentation } from "react-icons/md";
 import { Button } from "@chakra-ui/react";
 
 const mobileNav = () => {
-  const [dropDown, setDropDown] = useState(false);
+  const [dropDown, setDropDown] = useState(false);   
   const logo = "../images/logo.png";        
   const router = useRouter();
 
   const mobileData = [
     {
-      title: "Home",
+      title: "Home",    
       href: "/",
     },
     {

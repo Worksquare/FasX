@@ -9,7 +9,7 @@ const Showcase = () => {
       sm: "column-reverse",
       xl: "row-reverse",
     }}
-    alignItems="center"
+    alignItems="center"  
     justifyContent="center"
     px={{
       sm: "0",
