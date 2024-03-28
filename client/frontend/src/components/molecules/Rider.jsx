@@ -86,7 +86,7 @@ const Rider = () => {
            w={{
              sm: "297px",
              xl: "400px"
-           }}
+           }}          
            mt={{
              sm: "17px",
              xl: "40px",
@@ -100,7 +100,7 @@ const Rider = () => {
           >
             SignUp
           </Text>
-        </Link>
+        </Link>        
       </Flex>
     </Flex>
   );

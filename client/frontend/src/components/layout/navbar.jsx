@@ -8,15 +8,13 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const navlinks = [
     {      
-      title: "Home",
+      title: "Home",          
       href: "/",    
     },   
     {
       title: "About",
       href: "/about",
     },
-    
-   
   ];
  
   const mobileNav = [

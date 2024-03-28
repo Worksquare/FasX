@@ -14,11 +14,11 @@ const Description = () => {
     {
       imageUrl: track,
       text: "Track your items and be in touch",
-    },
+    },    
     {
       imageUrl: clock,
       text: "Get your items right on time",
-    },
+    },    
   ];
   return (
     <Flex
