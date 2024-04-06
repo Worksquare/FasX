@@ -14,7 +14,7 @@ const Showcase = () => {
     px={{
       sm: "0",
       xl: "120px",
-    }}
+    }}      
     my="70px"
     position="relative"
     >

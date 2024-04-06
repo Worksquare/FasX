@@ -20,9 +20,9 @@ const Navbar = () => {
   const mobileNav = [
     {
       title: "Home",
-      href: "/",
+      href: "/",    
     },
-    {
+    {   
       title: "About",
       href: "/about",
     },

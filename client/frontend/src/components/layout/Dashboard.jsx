@@ -28,11 +28,8 @@ const Dashboard = () => {
             <Flex fontSize={24} gap={2}>
               <Text fontWeight={500}>Welcome, </Text>    
               <Text>Jerry</Text>    
-            </Flex>
+            </Flex>   
    
-
-
-
             <Text fontSize={40}>Let's take your order for today</Text>
           </Box>
 
@@ -49,9 +46,9 @@ const Dashboard = () => {
           <Flex
             flexDirection="column"
             justifyContent="space-between"
-            px="12px"
+            px="12px"  
             w="187px"
-          >
+          >     
             <Heading fontSize="24px">Completed Orders</Heading>
             <Text fontSize="64px">0</Text>
           </Flex>
@@ -71,7 +68,7 @@ const Dashboard = () => {
             px="12px"
             w="187px"
             fontWeight="700"
-          >
+          >   
             <Heading fontSize="24px" w="inherit">
               Wallet Balance
             </Heading>
@@ -85,7 +82,7 @@ const Dashboard = () => {
               <Text fontFamily="Inter" fontSize="27px" fontWeight="500">
                 {delivery.type}
               </Text>
-              <Flex>
+              <Flex>   
                 <Image src={delivery.image} w="195px" h="138px" />
               </Flex>
             </Box>
