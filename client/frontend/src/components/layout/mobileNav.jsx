@@ -11,30 +11,30 @@ const mobileNav = () => {
   const router = useRouter();
 
   const mobileData = [
-    {
+    {   
       title: "Home",    
       href: "/",
     },
-    {
+    {   
       title: "About",
       href: "/about",
     },
-    {
+    {  
       title: "Contact Us",
       href: "/contact",
     },
-    {
+    {    
       title: "Blog",
       href: "/blog",
     },
     {
       title: "Login",
-      href: "/Login",
+      href: "/Login",  
     },
     {
       title: "Signup",
       href: "/signup",
-    },
+    },  
   ];
 
   

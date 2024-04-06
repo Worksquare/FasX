@@ -10,7 +10,7 @@ const RiderList = () => {
       <div className="rider_list">
         <div className="rider_list_img">   
           <img src={Ridera} alt="first logo" />  
-          <div className="name">
+          <div className="name">   
             <h4>
               Jerry Bale <span className="n_rides">439 rides</span>
             </h4>
