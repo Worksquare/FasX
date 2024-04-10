@@ -3,7 +3,7 @@ import { IoIosCheckmarkCircle } from "react-icons/io";
 
 const VerifyEmail = () => {
   const handleButtonClick = async () => {
-  
+      
   };
 
   return (

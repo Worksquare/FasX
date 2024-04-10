@@ -4,12 +4,10 @@ import icon from '../../images/Icon.png'
 import { useState } from 'react'
 import {useNavigate} from 'react-router-dom';
 
-     
-
-    
+       
 
 const RiderSignUp2 = ({ riderData }) => {
-  
+    
   const navigate = useNavigate();
 
     const [vehicleData, setVehicleData] = useState({
