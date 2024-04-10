@@ -3,16 +3,16 @@
   min-height: 100vh;
   border: 1px solid white;
 }
-
+      
 .verification form {
-  display: flex;
+  display: flex;    
   flex-direction: column;
   justify-content: center;
   background-color: #ffffff;
-  max-width: 500px;
+  max-width: 500px;    
   min-height: 500px;
   margin: 50px auto;
-  padding: 0px 40px;
+  padding: 0px 40px;      
   border-radius: 10px;
 }
 

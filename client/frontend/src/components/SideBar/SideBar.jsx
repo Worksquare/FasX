@@ -4,6 +4,7 @@ import './SideBar.css'
 
 const SideBar = () => {
   return (
+    
     section className='sidebar'>
         <div className="logo">
                     <span className='logo--main'>

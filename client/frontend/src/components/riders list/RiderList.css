@@ -2,13 +2,13 @@
   border: 2px solid red;
   width: 50%;
   margin: auto;
-}
+}   
 
-.rider_list {
+.rider_list {    
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
+}     
 
 .rider_list .rider_list_img {
   border: 2px solid red;
@@ -21,7 +21,7 @@
   font-size: 32px;
   color: #101010;
 }
-
+    
 .name .n_rides {
   font-size: 24px;
   color: #bababa;
