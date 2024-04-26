@@ -11,7 +11,7 @@ const Loading = () => {
         <img src={Loading1} alt="sucess pic" className="image_main" />
         <img src={Loading2} alt="sucess pic" className="image_main" />
       </div>
-      <span>Getting rider</span>
+      <span>Getting rider</span>     
     </section>
   );
 };

@@ -39,22 +39,22 @@ const mobileNav = () => {
 
   
 
-  return (
+  return (    
     <Box
     display={{ sm: "block", md: "block", lg: "none", xl: "none" }}
       alignItems="center"
       justifyContent="space-between"
       p="35px 120px"
-    >
+    >   
       <Link href="/">
         <Image src={logo} alt="logo" />
       </Link>
 
-      <Button onClick={handleDropdown}>
+      <Button onClick={handleDropdown}>      
         {dropDown ? (
           <MdCancelPresentation size={50} color="#515C9E" />
         ) : (
-          <AiOutlineMenu size={40} color="#515C9E" />
+          <AiOutlineMenu size={40} color="#515C9E" />    
         )}
       </Button>
 
@@ -62,7 +62,7 @@ const mobileNav = () => {
         {mobileData.map((data, index) => {
           return (
             <Link
-              key={index}
+              key={index}  
               href={data.href}
               color={router.pathname === navlink.href ? "#FF0000" : "#BABABAAB"}
               textDecoration={
@@ -72,7 +72,7 @@ const mobileNav = () => {
               fontFamily="Inter"
               fontWeight="800"
               fontSize="24px"
-            >
+            >  
               {navlink.title}
             </Link>
           );

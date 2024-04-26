@@ -75,8 +75,8 @@ const Dashboard = () => {
             <Text fontSize="64px">#0.00</Text>
           </Flex>
         </Flex>
-
-        <Flex my="40px" gap="25px">
+    
+        <Flex my="40px" gap="25px">    
           {deliveries.map((delivery, index) => (
             <Box key={index} p="19px" bg="#F0F0F0" borderRadius="27px">
               <Text fontFamily="Inter" fontSize="27px" fontWeight="500">

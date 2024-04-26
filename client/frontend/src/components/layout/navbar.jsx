@@ -1,12 +1,12 @@
 import { Box, Button, Flex, Image, Link } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import { MdCancelPresentation } from "react-icons/md";
+import { MdCancelPresentation } from "react-icons/md";    
 import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const navlinks = [
+  const navlinks = [    
     {      
       title: "Home",          
       href: "/",    
@@ -21,7 +21,7 @@ const Navbar = () => {
     {
       title: "Home",
       href: "/",    
-    },
+    },   
     {   
       title: "About",
       href: "/about",
@@ -74,7 +74,7 @@ const Navbar = () => {
             h={{
               sm: "47px",
               xl: "100%",
-            }}
+            }}  
           />
         </Link>
         <Box
