@@ -16,9 +16,9 @@ const Description = () => {
       text: "Track your items and be in touch",
     },    
     {
-      imageUrl: clock,
+      imageUrl: clock,   
       text: "Get your items right on time",
-    },    
+    },        
   ];
   return (
     <Flex

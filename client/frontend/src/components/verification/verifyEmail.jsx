@@ -8,7 +8,7 @@ const VerifyEmail = () => {
 
   return (
     <section className="password_reset_success">
-      <div className="password_reset_success_container">
+      <div className="password_reset_success_container">    
         <div className="success_icon">
           <IoIosCheckmarkCircle className="image_main" />
         </div>

@@ -6,10 +6,10 @@ import { Flex } from '@chakra-ui/react'
 
 const DashboardLayout = () => {
   return (           
-    <Flex> 
+    <Flex>   
       <Sidebar />   
       <Dashboard />
-    </Flex>
+    </Flex>     
   );
 };
 
