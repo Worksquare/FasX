@@ -24,12 +24,12 @@ const Description = () => {
     <Flex
       display={{
         sm: "none",
-        xl: "flex",
-      }}
+        xl: "flex",  
+      }}    
       bg="#BABABA"
       px="120px"
       alignItems="center"
-      justifyContent="space-between"
+      justifyContent="space-between"     
     >
       {descriptions.map((descrption, index) => (
         <Flex key={index} alignItems="center">

@@ -28,15 +28,15 @@ const Sidebar = () => {
       href: "#!",
       content: <Dashboard />,
     },
-    {
+    {    
       icon: <BsBookmarkPlus />,
       title: "Order Pickup",
-      href: "#!",
+      href: "#!",  
       content: <OrderPickup />,
     },
-    {
-      icon: <CiWallet />,
-      title: "Wallet",
+    {   
+      icon: <CiWallet />,   
+      title: "Wallet",   
       href: "#!",
       content: <Wallet />,
     },

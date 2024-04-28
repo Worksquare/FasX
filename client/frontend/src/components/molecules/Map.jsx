@@ -15,7 +15,7 @@ const Map = () => {
       px={{
         sm: "0",
         xl: "120px",
-      }}
+      }}     
       my="60px"
     >
       <Flex
@@ -23,13 +23,13 @@ const Map = () => {
         alignItems="center"
         justifyContent="center"
         bg="#F8F8F8"
-        borderRadius="20px"
+        borderRadius="20px"    
         zIndex="3"
         mr={{
           sm: "0",
           xl: "-40px",
         }}
-        pr={{
+        pr={{    
           sm: "0",
           xl: "50px",
         }}
