@@ -20,7 +20,7 @@ const Blog = () => {
               key={index}
               src={blog}
               cursor="pointer"
-              alt="blog"
+              alt="blog"    
               mb="40px"
               _hover={{
                 transform: "scale(1.1)",
@@ -28,7 +28,7 @@ const Blog = () => {
               }}      
             />
           );       
-        })}        
+        })}             
       </Box>     
     </Box>
   );
