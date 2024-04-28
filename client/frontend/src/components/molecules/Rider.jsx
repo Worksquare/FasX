@@ -95,11 +95,11 @@ const Rider = () => {
              sm: "center",
              xl: "center",
            }}
-            color="#D85B00"
+            color="#D85B00"   
             _hover={{textDecoration:"none"}}
           >
             SignUp
-          </Text>
+          </Text>     
         </Link>        
       </Flex>
     </Flex>

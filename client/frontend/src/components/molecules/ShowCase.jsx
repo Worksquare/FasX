@@ -18,7 +18,7 @@ const Showcase = () => {
     my="70px"
     position="relative"
     >
-      <Flex
+      <Flex    
         flexDirection="column"
         alignItems="center"
         justifyContent="center"

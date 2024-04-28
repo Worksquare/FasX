@@ -85,7 +85,7 @@ const HeroSection = () => {
           online?
         </Text>
       </Flex>
-
+       
       <Image
         src={heroImage}
         alt="hero-image"

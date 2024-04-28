@@ -8,9 +8,9 @@ const Loading = () => {
   return (
     <section className="loader">
       <div className="loader_images">
-        <img src={Loading1} alt="sucess pic" className="image_main" />
+        <img src={Loading1} alt="sucess pic" className="image_main" />   
         <img src={Loading2} alt="sucess pic" className="image_main" />
-      </div>
+      </div>   
       <span>Getting rider</span>     
     </section>
   );

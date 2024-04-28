@@ -24,7 +24,7 @@ const Footer = () => {
         {
           name: "Where to Find us",
           href: "#!",
-        },
+        },     
         {    
           name: "FAQs",
           href: "#!",
